@@ -1,0 +1,240 @@
+.rd-detail-container {
+  display: block;
+  /*background: green;*/
+}
+.row.double-top-padding.double-bottom-padding.no-h-padding.limit-width.row-parent {
+    padding: 45px 50px;
+}
+.row.col-half-gutter.limit-width.row-parent,
+.row.limit-width.row-parent {
+    padding: 25px;
+}
+
+.rd-details-box {
+  padding-top: 15px;
+}
+
+
+/*Desktop*/
+/* 459px */
+@media only screen
+and (max-width: 459px) {
+  .rd-details-box {
+    padding-top: 5px;
+  }
+  .rd-details-box a {
+    font-size:12px;
+    /*background:orange;*/
+  }
+  span.rd-detail-container {
+      padding: 1px;
+  }
+  .row.col-half-gutter.limit-width.row-parent,
+  .row.limit-width.row-parent {
+    padding: 25px 25px 25px 25px;
+  }
+  .rd-title span {
+    font-size: 24px;
+  }
+  .rd-subtitle span {
+    font-size: 18px;
+  }
+}
+/* 460px */
+@media only screen
+and (min-width : 460px)
+and (max-width: 659px) {
+  .rd-details-box {
+    padding-top: 15px;
+  }
+  .rd-details-box a {
+    font-size:14px;
+    /*background:pink;*/
+  }
+  span.rd-detail-container {
+      padding: 1px;
+  }
+  .row.col-half-gutter.limit-width.row-parent,
+  .row.limit-width.row-parent {
+    padding: 25px 50px 25px 50px;
+  }
+  .rd-title span {
+    font-size: 30px;
+  }
+  .rd-subtitle span {
+    font-size: 24px;
+  }
+}
+/*660px*/
+@media only screen
+and (min-width : 660px)
+and (max-width: 859px) {
+  .rd-details-box {
+    padding-top: 20px;
+  }
+  .rd-details-box a {
+    font-size:18px;
+    /*background:red;*/
+  }
+  span.rd-detail-container {
+      padding: 5px;
+  }
+  .row.col-half-gutter.limit-width.row-parent,
+  .row.limit-width.row-parent {
+    padding: 25px 50px 25px 50px;
+  }
+  .rd-title span {
+    font-size: 30px;
+  }
+  .rd-subtitle span {
+    font-size: 24px;
+  }
+}
+/*860px*/
+@media only screen
+and (min-width : 860px)
+and (max-width: 959px) {
+  .rd-details-box {
+    padding-top: 50px;
+  }
+  .rd-details-box a {
+    font-size:18px;
+    /*background:red;*/
+  }
+  span.rd-detail-container {
+      padding: 5px;
+  }
+  .row.col-half-gutter.limit-width.row-parent,
+  .row.limit-width.row-parent {
+    padding: 25px 50px 25px 50px;
+  }
+  .rd-title span {
+    font-size: 30px;
+  }
+  .rd-subtitle span {
+    font-size: 24px;
+  }
+}
+
+/* Portrait */
+/* iphone 5(320)/6(375)/6+(414) */
+/*iphone 5 portrait*/
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 374px)
+and (orientation : portrait) {
+  .rd-details-box a {
+    font-size:11px;
+    /*background:lightgrey;*/
+  }
+  .rd-title span {
+    font-size: 18px;
+  }
+  .rd-subtitle span {
+    font-size: 14px;
+  }
+}
+/*iphone 6 portrait*/
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 413px)
+and (orientation : portrait) {
+  .rd-details-box a {
+    font-size:14px;
+    /*background:white;*/
+  }
+  .rd-details-box {
+    padding-top: 10px;
+  }
+  .rd-title span {
+    font-size: 24px;
+  }
+  .rd-subtitle span {
+    font-size: 18px;
+  }
+}
+/*iphone 6+ portrait*/
+@media only screen
+and (min-device-width : 414px)
+and (max-device-width : 568px)
+and (orientation : portrait) {
+  .rd-details-box a {
+    font-size:16px;
+    /*background:darkgrey;*/
+  }
+  .rd-details-box {
+    padding-top: 15px;
+  }
+  .rd-title span {
+    font-size: 24px;
+  }
+  .rd-subtitle span {
+    font-size: 18px;
+  }
+}
+/*ipad portrait*/
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1023px)
+and (orientation : portrait) {
+  .rd-details-box a {
+    font-size:18px;
+    /*background:blue;*/
+  }
+  .rd-details-box {
+    padding-top: 20px;
+  }
+  span.rd-detail-container {
+      padding: 5px;
+  }
+  .row.col-half-gutter.limit-width.row-parent {
+    padding: 50px 75px 50px 75px;
+  }
+  .row.limit-width.row-parent {
+    padding: 20px 75px 50px 75px;
+  }
+}
+/*iphone 5 landscape*/
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 666px)
+and (orientation : landscape) {
+  .rd-details-box a {
+    font-size:16px;
+    /*background:darkgrey;*/
+  }
+  .rd-details-box {
+    padding-top: 15px;
+  }
+  span.rd-detail-container {
+      padding: 5px;
+  }
+  .row.col-half-gutter.limit-width.row-parent {
+    padding: 25px 50px 25px 50px;
+  }
+  .row.limit-width.row-parent {
+      padding: 25px 50px 50px 50px;
+  }
+}
+/*iphone 6/6+ landscape*/
+@media only screen
+and (min-device-width : 667px)
+and (max-device-width : 767px)
+and (orientation : landscape) {
+  .rd-details-box a {
+    font-size:18px;
+    /*background:blue;*/
+  }
+  .rd-details-box {
+    padding-top: 20px;
+  }
+  span.rd-detail-container {
+      padding: 5px;
+  }
+  .row.col-half-gutter.limit-width.row-parent {
+    padding: 25px 50px 25px 50px;
+  }
+  .row.limit-width.row-parent {
+      padding: 25px 50px 50px 50px;
+  }
+}
