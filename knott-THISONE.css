@@ -771,12 +771,12 @@
     /* Text Size of Titles on Mobile */
     .rd-index h3.t-entry-title.h4 {
       font-size: 15px;
-      background: palegreen;
+      background: mediumpurple;
     }
     /* Padding Around Text in Card Posts */
     .rd-index .t-entry-text-tc.single-block-padding {
       /*padding: 1em;*/
-      background: palegreen;
+      background: mediumpurple;
     }
     /* Gutter Padding */
     .half-gutter .tmb {
@@ -1113,7 +1113,7 @@
       background: yellow;
     }
     .rd-section-heading {
-      background: orange
+      background: orange;
     }
     .rd-page-lead {
       background: purple;
@@ -1197,7 +1197,7 @@
       background: yellow;
     }
     .rd-section-heading {
-      background: orange
+      background: orange;
     }
     .rd-page-lead {
       background: purple;

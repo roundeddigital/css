@@ -38,11 +38,11 @@
 /* Rounded Digital css classes */
 /*rd-index is now rd-cards*/
 .rd-index,
-.rd-cards {}
-.rd-title {}
-.rd-subtile {}
-.rd-intro {}
-.rd-subheading {}
-.rd-section-heading {}
-.rd-page-lead {}
+.rd-cards {} mediumpurple
+.rd-title {} greenyellow
+.rd-subtile {} blue
+.rd-intro {} blueviolet
+.rd-subheading {} yellow
+.rd-section-heading {} orange
+.rd-page-lead {} purple
 ```
