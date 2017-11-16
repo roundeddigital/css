@@ -26,7 +26,7 @@
 ---
 
 #### Default Values for Visual Studio
-
+##### VC Padding to EM's
 - .5x = .75em
 - 1x = 1.5em (9px)
 - 2x = 3em
