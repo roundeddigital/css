@@ -383,7 +383,7 @@ TEAM MEMBER SINGLES
 /*Increases font size of introduction paragraph */
 
 .rd-intro p {
-  background: blueviolet;
+  /*background: blueviolet;*/
   font-size: 18px;
 }
 
@@ -514,7 +514,6 @@ MODAL: APPOINTMENT REQUEST
 
 .modal-content {
   padding: 50px;
-  /*background-color: red;*/
 }
 
 .modal-footer {
@@ -618,7 +617,7 @@ MOBILE STYLES
   .rd-intro p {
     font-size: 15px;
     line-height: 1.5em!important;
-    background: blueviolet;
+    /*background: blueviolet;*/
   }
   /*Styles H2 on mobile*/
   h2 {
@@ -773,12 +772,12 @@ MOBILE STYLES
   /* Text Size of Titles on Mobile */
   .rd-index h3.t-entry-title.h4 {
     font-size: 15px;
-    background: mediumpurple;
+    /*background: mediumpurple;*/
   }
   /* Padding Around Text in Card Posts */
   .rd-index .t-entry-text-tc.single-block-padding {
     /*padding: 1em;*/
-      background: mediumpurple;
+      /*background: mediumpurple;*/
   }
   /* Gutter Padding */
   .half-gutter .tmb {
@@ -799,7 +798,6 @@ MOBILE STYLES
 /*remove all default padding*/
 .row.double-top-padding.double-bottom-padding.no-h-padding.limit-width.row-parent,
 .row.full-width.row-parent {
-  /*background: lightgreen;*/
   padding: 1.5em;
 }
 
@@ -810,7 +808,6 @@ MOBILE STYLES
 
 .border-color-gyho-color.single-block-padding {
   /*padding-right: unset;*/
-  /*background: pink;*/
 }
 
 .t-entry-text-tc.single-block-padding {
@@ -820,38 +817,37 @@ MOBILE STYLES
 /*START mini-cards*/
 
 .t-inside {
-  /*background: pink;*/
   /*padding:unset;*/
 }
 .t-entry-type {
-  background: yellow;
+  /*background: yellow;*/
 }
 
 .t-entry-text {
-  background: white;
+  /*background: white;*/
   /*padding-right: 1.2em;*/
 
 }
 
 .t-entry a {
-  background: blue;
+  /*background: blue;*/
   font-size: 1em;
 }
 
 .t-entry-title {
-  background: brown;
+  /*background: brown;*/
 }
 
 .t-entry-cf-detail-521378,
 .t-entry-cf-detail-155643,
 .t-entry-cf-detail-153464 {
-  background: red;
+  /*background: red;*/
 }
 
 /*phone number*/
 
 .t-entry-cf-detail-110456 {
-  background: green;
+  /*background: green;*/
   display: inline;
   font-size: .9em;
 }
@@ -859,7 +855,7 @@ MOBILE STYLES
 /*email address*/
 
 .t-entry-cf-detail-142935 {
-  background: orange;
+  /*background: orange;*/
   display: inline;
   font-size: .9em;
   /*float:right;*/
@@ -871,86 +867,82 @@ MOBILE STYLES
 /*START team-member-contact-box info area*/
 .rd-details-box {
   padding: unset;
-  background: olive;
+  /*background: olive;*/
 }
 .rd-detail-container {
   padding: unset;
 }
 .rd-detail-value {
   font-size: .5em;
-  background: white;
+  /*background: white;*/
 }
 .rd-detail-label {
   font-size: .5em;
-  background: white;
+  /*background: white;*/
 }
 /*END team-member-contact-box info area*/
 
 /*TODO: add .rd-container this to master template*/
 
 .rd-container {
-  background: brown;
+  /*background: brown;*/
 }
 
 .main-text {
-  /*background:red;*/
 }
 
 .heading-text {
-  background:lightblue;
+  /*background:lightblue;*/
 }
 
 .rd-title span {
-  background: greenyellow;
+  /*background: greenyellow;*/
   font-size: 1.3em;
 }
 .employee-job-title span {
-  background: coral;
+  /*background: coral;*/
   font-size: 1.1em;
 }
 
 .services-titles {
-  /*background:lightblue;*/
 }
 
 .services-titles span {
-  background: lightblue;
+  /*background: lightblue;*/
 }
 
 .text-lead {
-  /*background: green;*/
-  background: lightgreen;
+  /*background: lightgreen;*/
 }
 /*affiliations url link*/
 .t-entry-cf-detail-102771 {
-  background: mistyrose;
+  /*background: mistyrose;*/
   font-size: 2.5em!important;
 }
 
 .rd-subtitle {
-  background: blue;
+  /*background: blue;*/
 }
 
 .t-entry-excerpt {
-  /*background: green;*/
-  background: lightgreen;
+  /*background: lightgreen;*/
   /*display:none;*/
 }
 
 .rd-intro {
-  background: blueviolet;
+  /*background: blueviolet;*/
 }
 
 .rd-subheading {
-  background: yellow;
+  /*background: yellow;*/
 }
 
 .rd-section-heading {
-  background: orange;
+  /*background: orange;*/
 }
 
 .rd-page-lead {
-  background: purple;
+  /*background: purple;*/
 }
 
 .rd-column {
@@ -1041,7 +1033,7 @@ MOBILE STYLES
   text-transform: uppercase;
   margin-top: .5em;
   margin-bottom: .5em;
-  background: yellow;
+  /*background: yellow;*/
 }
 
 /*VC RD_Mobile*/
@@ -1063,10 +1055,9 @@ MOBILE STYLES
   }*/
   .row-container.onepage-section {
     padding-top: 50px;
-    /*background: mistyrose;*/
   }
   .t-inside {
-    background: deeppink;
+    /*background: deeppink;*/
     left: -10px;
     position: absolute;
     top: 0px!important;
@@ -1076,36 +1067,36 @@ MOBILE STYLES
     padding: unset;
   }
   .rd-container {
-    background: brown;
+    /*background: brown;*/
     /*padding: 1em;*/
   }
   /*START mini-cards*/
   .t-inside {
-    background: orange;
+    /*background: orange;*/
     /*padding:unset;*/
   }
   .t-entry a {
-    background: blue;
+    /*background: blue;*/
     font-size: .9em;
   }
   .t-entry-title {
-    background: brown;
+    /*background: brown;*/
   }
   .t-entry-cf-detail-521378,
   .t-entry-cf-detail-155643,
   .t-entry-cf-detail-153464 {
-    background: red;
+    /*background: red;*/
     font-size: .8em;
   }
   /*phone number*/
   .t-entry-cf-detail-110456 {
-    background: green;
+    /*background: green;*/
     display: inline;
     font-size: .6em;
   }
   /*email address*/
   .t-entry-cf-detail-142935 {
-    background: orange;
+    /*background: orange;*/
     display: inline;
     font-size: .6em;
     /*float:right;*/
@@ -1116,18 +1107,18 @@ MOBILE STYLES
   /*START team-member-contact-box info area*/
   .rd-details-box {
     padding: unset;
-    background: olive;
+    /*background: olive;*/
   }
   .rd-detail-container {
     padding: unset;
   }
   .rd-detail-value {
     font-size: .5em;
-    background: white;
+    /*background: white;*/
   }
   .rd-detail-label {
     font-size: .5em;
-    background: white;
+    /*background: white;*/
   }
   /*END team-member-contact-box info area*/
 
@@ -1138,27 +1129,27 @@ MOBILE STYLES
     display: none;
   }
   .rd-title span {
-    background: greenyellow;
+    /*background: greenyellow;*/
     font-size: .8em;
   }
   .employee-job-title span {
-    background: coral;
+    /*background: coral;*/
     font-size: 1.1em;
   }
   .rd-subtile {
-    background: blue;
+    /*background: blue;*/
   }
   .rd-intro {
-    background: blueviolet;
+    /*background: blueviolet;*/
   }
   .rd-subheading {
-    background: yellow;
+    /*background: yellow;*/
   }
   .rd-section-heading {
-    background: lightblue;
+    /*background: lightblue;*/
   }
   .rd-page-lead {
-    background: purple;
+    /*background: purple;*/
   }
 }
 
@@ -1184,36 +1175,35 @@ MOBILE STYLES
     padding-top: 40px;
   }
   .rd-container {
-    background: brown;
+    /*background: brown;*/
     /*padding: 1em;*/
   }
   /*START mini-cards*/
   .t-inside {
-    /*background: pink;*/
     /*padding:unset;*/
   }
   .t-entry a {
-    background: blue;
+    /*background: blue;*/
     font-size: .9em;
   }
   .t-entry-title {
-    background: brown;
+    /*background: brown;*/
   }
   .t-entry-cf-detail-521378,
   .t-entry-cf-detail-155643,
   .t-entry-cf-detail-153464 {
-    background: red;
+    /*background: red;*/
     font-size: .8em;
   }
   /*phone number*/
   .t-entry-cf-detail-110456 {
-    background: green;
+    /*background: green;*/
     display: inline;
     font-size: .8em;
   }
   /*email address*/
   .t-entry-cf-detail-142935 {
-    background: orange;
+    /*background: orange;*/
     display: inline;
     font-size: .8em;
     /*float:right;*/
@@ -1223,45 +1213,45 @@ MOBILE STYLES
   /*START team-member-contact-box info area*/
   .rd-details-box {
     padding: unset;
-    background: olive;
+    /*background: olive;*/
   }
   .rd-detail-container {
     padding: unset;
   }
   .rd-detail-value {
     font-size: .5em;
-    background: white;
+    /*background: white;*/
   }
   .rd-detail-label {
     font-size: .5em;
-    background: white;
+    /*background: white;*/
   }
   /*END team-member-contact-box info area*/
   .t-entry-excerpt {
     /*display: none;*/
   }
   .rd-title span {
-    background: greenyellow;
+    /*background: greenyellow;*/
     font-size: 1.2em;
   }
   .employee-job-title span {
-    background: coral;
+    /*background: coral;*/
     font-size: 1.1em;
   }
   .rd-subtile {
-    background: blue;
+    /*background: blue;*/
   }
   .rd-intro {
-    background: blueviolet;
+    /*background: blueviolet;*/
   }
   .rd-subheading {
-    background: yellow;
+    /*background: yellow;*/
   }
   .rd-section-heading {
-    background: orange;
+    /*background: orange;*/
   }
   .rd-page-lead {
-    background: purple;
+    /*background: purple;*/
   }
 }
 
