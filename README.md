@@ -17,7 +17,7 @@
 ---
 
 #### Utilize `em` instead of `px`
-['EM' vs 'PX' vs PX' vs 'PERCENT'](https://kyleschaeffer.com/development/css-font-size-em-vs-px-vs-pt-vs/)
+['EM' vs 'PX' vs PT' vs 'PERCENT'](https://kyleschaeffer.com/development/css-font-size-em-vs-px-vs-pt-vs/)
 
 > Meet the Units. “Ems” (em): The “em” is a scalable unit that is used in web document media. An em is equal to the current font-size, for instance, if the font-size of the document is 12pt, 1em is equal to 12pt.
 
@@ -46,3 +46,6 @@
 .rd-section-heading {} orange
 .rd-page-lead {} purple
 ```
+[Colors](https://www.w3schools.com/cssref/css_colors.asp)
+
+---
