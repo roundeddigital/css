@@ -41,10 +41,20 @@
 .rd-cards {} mediumpurple
 .rd-title {} greenyellow
 .rd-subtile {} blue
-.rd-intro {} blueviolet
+.rd-intro,
+.rd-intro p {} blueviolet
 .rd-subheading {} yellow
-.rd-section-heading {} orange
+.heading-text span,
+.service-titles span,
+.rd-section-heading {} lightblue
 .rd-page-lead {} purple
+.text-lead,
+.rd-lead {} lightgreen
+/* other colors */
+coral, orange, blueviolet, mistyrose, olive,
+lightgreen, white, brown, red, green, deeppink
+/* commented out */
+pink
 ```
 [Colors](https://www.w3schools.com/cssref/css_colors.asp)
 
