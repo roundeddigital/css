@@ -1,0 +1,523 @@
+
+/*https://knottlab.dream.press/gallery/*/
+/*https://knottlab.dream.press/projects/*/
+/*.menu-horizontal.menu-dark.text-center {
+    box-shadow: 0px 10px 30px rgb(100, 66, 255);
+}*/
+
+/* ------------------------------------------------------------------- [RD] ISOTOPE GALLERY */
+
+    /* ------------------------------------------------------------------- [RD] FILTER MENU */
+
+        /*Applies DISPLAY: NONE to undesired category filters in isotope navigation bar*/
+
+        /*Category: Rounded Digital*/
+        .isotope-filters ul.menu-smart li.filter-cat-246 {
+            display: none !important;
+        }
+
+        /*Recolors active menu item in isotope filter*/
+        .isotope-filters .menu-dark .menu-smart > li.active > a, .isotope-filters .menu-dark .menu-smart > li a.active, .isotope-filters .menu-dark .menu-smart > li.current-menu-ancestor > a, .isotope-filters .menu-dark .menu-smart > li.current-menu-item:not(.menu-item-type-custom) > a {
+            color: #00a7e1;
+        }
+
+    /* ------------------------------------------------------------------- [RD] KNOTT LABORATORY FAVORITES */
+
+        /*Category: Knott Laboratory Favorites*/
+        .isotope-filters ul.menu-smart li.filter-cat-248 {
+            display: none !important;
+        }
+
+        /*Category: High Profile Cases */
+        .isotope-filters ul.menu-smart li.filter-cat-119 {
+            display: none !important;
+        }
+
+        /*Category: Animation Marketing*/
+        .isotope-filters ul.menu-smart li.filter-cat-129 {
+            display: none !important;
+        }
+
+        /*Category: Media Appearances*/
+        .isotope-filters ul.menu-smart li.filter-cat-131 {
+            display: none !important;
+        }
+
+        /*Category: Team Headshots*/
+        .isotope-filters ul.menu-smart li.filter-cat-228 {
+            display: none !important;
+        }
+
+        /*Category: Team Member Resume*/
+        .isotope-filters ul.menu-smart li.filter-cat-227 {
+            display: none !important;
+        }
+
+        /*Category: Team Member Docs*/
+        .isotope-filters ul.menu-smart li.filter-cat-229 {
+            display: none !important;
+        }
+
+    /* ------------------------------------------------------------------- [RD] WORK SAMPLES */
+
+        /*Category: Work Samples*/
+        .isotope-filters ul.menu-smart li.filter-cat-249 {
+            display: none !important;
+        }
+
+        /*Category: Transportation Visualization*/
+        .isotope-filters ul.menu-smart li.filter-cat-118 {
+            display: none !important;
+        }
+
+        /*Category: Forensic Animation*/
+        .isotope-filters ul.menu-smart li.filter-cat-128 {
+            display: none !important;
+        }
+
+        /*Category: Video Matching*/
+        .isotope-filters ul.menu-smart li.filter-cat-135 {
+            display: none !important;
+        }
+
+        /*Category: Point Clouds*/
+        .isotope-filters ul.menu-smart li.filter-cat-136 {
+            display: none !important;
+        }
+
+    /* ------------------------------------------------------------------- [RD] ACCIDENT TYPES */
+
+
+        /*Category: Accident Types*/
+        .isotope-filters ul.menu-smart li.filter-cat-247 {
+            display: none !important;
+        }
+
+
+        /*Category: Car Accidents*/
+        /*.isotope-filters ul.menu-smart li.filter-cat-120 { */
+        /*    display: none !important;*/
+        /*} */
+
+        /*Category: Semi Tractor Trailer Accidents*/
+        .isotope-filters ul.menu-smart li.filter-cat-121 {
+            display: none !important;
+        }
+
+        /*Category: Commercial Vehicle Accidents*/
+        /*.isotope-filters ul.menu-smart li.filter-cat-122 { */
+        /*    display: none !important;*/
+        /*} */
+
+        /*Category: Skidsteer Accidents*/
+        .isotope-filters ul.menu-smart li.filter-cat-124 {
+            display: none !important;
+        }
+
+        /*Category: Workplace Safety Accidents*/
+        .isotope-filters ul.menu-smart li.filter-cat-127 {
+            display: none !important;
+        }
+
+        /*Category: Motorcycle Accidents*/
+        /*.isotope-filters ul.menu-smart li.filter-cat-123 { */
+        /*    display: none !important;*/
+        /*} */
+
+        /*Category: Woodchipper Accidents*/
+        /*.isotope-filters ul.menu-smart li.filter-cat-134 { */
+        /*    display: none !important;*/
+        /*} */
+
+        /*Category: Crane Accidents*/
+        /*.isotope-filters ul.menu-smart li.filter-cat-126 { */
+        /*    display: none !important;*/
+        /*} */
+
+        /*Category: Forklift Accidents*/
+        .isotope-filters ul.menu-smart li.filter-cat-125 {
+            display: none !important;
+        }
+
+        /*Category: Pedestrian Accidents*/
+        .isotope-filters ul.menu-smart li.filter-cat-132 {
+            display: none !important;
+        }
+
+        /*Category: Structural Accidents*/
+        /*.isotope-filters ul.menu-smart li.filter-cat-133 { */
+        /*    display: none !important;*/
+        /*} */
+
+        /*Category: Collapse Accidents*/
+        /*.isotope-filters ul.menu-smart li.filter-cat-137 { */
+        /*    display: none !important;*/
+        /*} */
+
+        /*Category: Shooting Accidents*/
+        /*.isotope-filters ul.menu-smart li.filter-cat-138 { */
+        /*    display: none !important;*/
+        /*} */
+
+    /* ------------------------------------------------------------------- [RD] SERVICE TYPES */
+
+        /*Category: Service Type*/
+        .isotope-filters ul.menu-smart li.filter-cat-244 {
+            display: none !important;
+        }
+
+        /*Category: Civil & Structural Engineering*/
+        .isotope-filters ul.menu-smart li.filter-cat-242 {
+            display: none !important;
+        }
+
+        /*Category: Mechanical Engineering*/
+        .isotope-filters ul.menu-smart li.filter-cat-243 {
+            display: none !important;
+        }
+
+        /*Category: Fire & Explosion*/
+        .isotope-filters ul.menu-smart li.filter-cat-241 {
+            display: none !important;
+        }
+
+
+/* ---------------------------------------------------------------------- Menu*/
+
+
+@media (min-width: 960px) {
+    .menu-smart>li>a{
+        padding: 18px 9px 18px 9px;
+    }
+}
+
+@media (max-width: 959px) {
+  .menu-horizontal-inner .menu-smart{
+    padding: 27px 0px 27px 0px !important;
+  }
+}
+
+@media (min-width: 960px){
+.navbar-nav-first  .menu-primary-inner.menu-smart{
+    padding: 0px 0px 0px 13px;
+}
+}
+
+.menu-container{
+    border: none !important;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+}
+
+/* ---------------------------------------------------------------------- Font sizes*/
+
+.font-762333.h4{
+    font-size:18px;
+}
+
+.fontsize-338686{
+    font-size: 85px;
+}
+
+@media (min-width: 960px){
+#page-header .fontsize-155944{
+    font-size: 40px;
+}
+}
+
+/* ---------------------------------------------------------------------- Various*/
+
+.scroll-top{
+    display:none !important;
+}
+
+
+.ilightbox-fullscreen{
+    display: none !important;
+}
+
+
+.font-146884{
+    letter-spacing: -0.02em;
+}
+
+/*Reduce spacing between title and subtitle*/
+.main-container .row-container .row-parent .column_child.half-internal-gutter .uncont > *:not(:first-child){
+    margin-top: 9px;
+}
+
+/*Heading size on mobile*/
+@media (max-width: 569px){
+    h1:not([class*="fontsize-"]),
+    .h1:not([class*="fontsize-"]){
+        font-size: 24px;
+    }
+}
+
+.btn-color-742106{
+    background-color: #65c74e !important;
+    border-color: #65c74e !important;
+}
+
+.btn-color-742106.btn-flat:not(.btn-hover-nobg):hover{
+    background-color: #60bf4a !important;
+     border-color: #60bf4a !important;
+}
+
+.fontspace-111509{
+    letter-spacing: -0.035em;
+}
+
+/* ---------------------------------------------------------------------- Demos*/
+
+.isotope-filters.single-gutter{
+    margin-bottom: 54px;
+}
+
+@media (min-width: 1400px){
+  .isotope-wrapper.isotope-inner-padding.single-gutter{
+padding-left: 72px !important;
+padding-right: 72px !important;
+}
+
+.isotope-filters.single-gutter{
+    margin-bottom: 72px;
+}
+}
+
+div.splash-demos .isotope-wrapper{
+ z-index: 2;
+}
+
+div.splash-demos.style-color-rgdb-bg.row-container.onepage-section.boomapps_vcrow{
+  overflow: hidden;
+}
+
+.tmb-shadowed.tmb-no-bg.tmb-media-first.tmb > .t-inside .t-entry-visual{
+    -webkit-box-shadow: 0px 40px 80px -40px rgba(0,0,0,1)!important;
+    -moz-box-shadow: 0px 40px 80px -40px rgba(0,0,0,1)!important;
+    box-shadow: 0px 40px 80px -40px rgba(0,0,0,1)!important;
+}
+
+.owl-carousel-wrapper .tmb-shadowed.tmb-no-bg.tmb-media-first.tmb > .t-inside .t-entry-visual{
+    -webkit-box-shadow: 0px 40px 50px -40px rgba(0,0,0,1)!important;
+    -moz-box-shadow: 0px 40px 50px -40px rgba(0,0,0,1)!important;
+    box-shadow: 0px 40px 50px -40px rgba(0,0,0,1)!important;
+}
+
+
+.tmb-dark.tmb-bordered.tmb-no-bg.tmb-media-first.tmb > .t-inside .t-entry-visual{
+     border: 1px solid rgba(255, 255, 255, 0.005);
+}
+
+/*Custom thumbnails border radius*/
+.img-round .t-entry-visual-cont > a,
+.img-round.tmb > .t-inside .t-entry-visual-cont,
+.img-round.tmb > .t-inside .t-entry-visual{
+    border-radius: 2px;
+}
+
+@media (max-width: 569px){
+.isotope-wrapper.isotope-inner-padding.single-gutter{
+    padding-top: 36px !important;
+}
+}
+
+.tmb .dummy{
+    margin-top: 0px;
+}
+
+/* ---------------------------------------------------------------------- Filter Demos*/
+
+/*.style-color-rgdb-bg{*/
+/*background-color: #23282d;*/
+/*}*/
+
+
+/*KD*/
+.isotope-filters{
+/*overflow: visible !important;*/
+padding: 0px;
+-webkit-box-shadow:  0px 40px 80px -20px rgba(0, 0, 0, .5) !important;
+-moz-box-shadow:  0px 40px 80px -20px rgba(0, 0, 0, .5) !important;
+box-shadow: 0px 40px 80px -20px rgba(0, 0, 0, .5)!important;
+}
+
+
+
+
+
+/* ---------------------------------------------------------------------- Video*/
+.video-section .icon-media svg {
+    -webkit-transition: -webkit-transform 0.2s;
+    -moz-transition: -moz-transform 0.2s;
+    -o-transition: -o-transform 0.2s;
+    transition: transform 0.2s;
+}
+
+.video-section .icon-media:hover svg {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+/* ---------------------------------------------------------------------- Features*/
+
+/*KD*/
+/*.features .text-lead,*/
+/*.features .text-lead>*{*/
+/*   font-size: 17px;*/
+/*}*/
+
+
+/* ---------------------------------------------------------------------- Showcase carousel*/
+
+/* Blog carousel nicer desktop navigation arrows */
+@media (min-width: 570px){
+.style-light .style-dark.style-override .owl-nav-container.btn-default,
+.style-light .style-dark .owl-nav-container.btn-default{
+    background: transparent !important;
+}
+
+}
+
+
+@media (min-width: 960px){
+.owl-carousel-container.carousel-inner-padding.owl-carousel-container .owl-carousel{
+   padding-left: 72px;
+   padding-right: 72px;
+}
+}
+
+.owl-prev,
+.owl-next {
+    margin: 0px !important;
+}
+
+.style-light .btn-default,
+.style-dark .style-light.style-override .btn-default,
+.style-dark .style-light .btn-default {
+    background-color: transparent !important;
+    border-color: transparent !important;
+}
+
+/*Make the carosuel arrows centering the image*/
+.owl-prev .owl-nav-container,
+.owl-next .owl-nav-container {
+    top: -65px;
+}
+
+.owl-dots-outside > .owl-dots {
+    bottom: -72px;
+}
+
+@media (min-width: 570px){
+.owl-dots-outside.owl-carousel[data-dots="true"] {
+    margin-bottom: 72px;
+}
+}
+
+#gallery-1833535 > .isotope-wrapper.single-gutter{
+    padding: 0px !important;
+}
+
+/*---------------------------------------------------------------------- Testimonials*/
+
+.owl-carousel-wrapper.textual-carousel{
+    margin-top: 18px !important;
+}
+
+.t-entry-visual .pullquote p{
+        color: #777777 !important;
+}
+
+.textual-carousel .tmb .regular-text {
+    padding: 0px !important;
+    text-align:center;
+}
+
+.textual-carousel .tmb .regular-text .pullquote {
+    border: 0;
+    padding: 54px;
+    background: #fff !important;
+    border-radius: 1px;
+}
+
+.textual-carousel .tmb .regular-text .pullquote>p {
+    font-style: italic;
+    font-size: 17px;
+    line-height: 1.75;
+}
+
+blockquote small {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.carousel-inner-padding .owl-carousel .owl-stage-outer{
+       height: auto !important
+}
+
+.tmb-with-shadow,
+.tmb-shadowed:not(.tmb-no-bg):not(.tmb-media-shadowed).tmb > .t-inside,
+.tmb-shadowed.tmb-no-bg.tmb-media-first.tmb > .t-inside .t-entry-visual,
+.tmb-media-shadowed.tmb .t-entry-visual,
+.uncode-single-media-wrapper.tmb-shadow{
+/* box-shadow: 0px -15px 70px -20px rgba(0, 0, 0, 0.075);*/
+-webkit-box-shadow: 0px 6px 42px -20px rgba(0, 0, 0, .15);
+-moz-box-shadow: 0px 6px 42px -20px rgba(0, 0, 0, .15);
+box-shadow: 0px 6px 42px -20px rgba(0, 0, 0, .15);
+
+}
+
+@media (max-width: 959px){
+.owl-valign-middle.owl-carousel .owl-item { vertical-align: top; }
+}
+
+/*---------------------------------------------------------------------- Get your copy section*/
+
+@media (min-width: 960px){
+.fontsize-445851 {
+    font-size: 85px;
+}
+}
+
+.vc_custom_1460112052451.border-color-xsdn-color{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25) !important;
+}
+.border-color-xsdn-color {
+    border-right: 1px solid rgba(255, 255, 255, 0.25) !important;
+}
+
+.icon-box-heading > * {
+    margin-top: 18px;
+}
+
+.icons-reduced .icon-box-content p{
+    line-height:1 !important;
+}
+
+div > .icon-box {
+    line-height: 0;
+}
+.icon-box .icon-media {
+    line-height: 0;
+}
+
+.fontspace-111509.font-202503{
+    letter-spacing:-.07em;
+}
+
+
+/* ---------------------------------------------------------------------- Footer*/
+footer .footer-center{
+    padding-top: 72px;
+    padding-bottom: 72px;
+}
+
+.owl-carousel .owl-item img{
+    transform-style: initial;
+}
