@@ -1,52 +1,23 @@
-<style>
-.infusion-field {
-    font-size: 1.1em;
-    padding: .3em;
-    display:inline!important;
-}
-.infusion-field-input-container {
-    padding:2em;
-    font-weight:900!important;
-}
-label.infusion-field-label {
-    display: none;
-}
-.infusion-field-label {
-  display: none;
-  color:red;
-}
-input, button, select, textarea {
-    font-weight: 400!important;
-    font-family: 'SF-Pro-Display', Roboto, Sans-Serif !important;
-    letter-spacing: .01em;
-    text-transform: unset;
-}
-.infusion-field-input-container {
-    display: inline-block;
-    width: 50%;
-}
-.test {
-  width:10%!important;
-  display:inline!important;
-}
 </style>
-<!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.5.1/css/pikaday.min.css" rel="stylesheet" type="text/css" /> -->
+<!-- TODO: Check this out -->
+<!-- RND: Do this -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.5.1/css/pikaday.min.css" rel="stylesheet" type="text/css" />
 <form accept-charset="UTF-8" action="https://wp350.infusionsoft.com/app/form/process/8e8bda8a798f29a019d8d452a3856f4c" class="infusion-form" id="inf_form_8e8bda8a798f29a019d8d452a3856f4c" method="POST">
   <input name="inf_form_xid" type="hidden" value="8e8bda8a798f29a019d8d452a3856f4c" />
   <input name="inf_form_name" type="hidden" value="New Job Form~br~Website" />
   <input name="infusionsoft_version" type="hidden" value="1.68.0.144" />
   <!-- First Name -->
-  <div class="test">
   <div class="infusion-field">
     <label class="infusion-field-label" for="inf_field_FirstName">First Name *</label>
     <input class="infusion-field-input-container" id="inf_field_FirstName" name="inf_field_FirstName" placeholder="First Name *" type="text" />
+    <label class="infusion-field-label" for="inf_field_LastName">Last Name *</label>
+    <input class="infusion-field-input-container" id="inf_field_LastName" name="inf_field_LastName" placeholder="Last Name *" type="text" />
   </div>
   <!-- Last Name -->
   <div class="infusion-field">
     <label class="infusion-field-label" for="inf_field_LastName">Last Name *</label>
     <input class="infusion-field-input-container" id="inf_field_LastName" name="inf_field_LastName" placeholder="Last Name *" type="text" />
   </div>
-</div>
   <!-- Company -->
   <div class="infusion-field">
     <label class="infusion-field-label" for="inf_field_Company">Company *</label>
@@ -96,6 +67,7 @@ input, button, select, textarea {
       </div>
     </div>
   </div>
+  <!-- RND: This is the claim info -->
   <!-- Claim or Case Info -->
   <div class="infusion-field">
     <label for="inf_custom_ClaimorCaseInformation">Claim or Case Information *</label>
@@ -123,7 +95,7 @@ input, button, select, textarea {
   </div>
   </div>
 </form>
-<!-- <script type="text/javascript" src="https://wp350.infusionsoft.com/app/webTracking/getTrackingCode"></script>
+<script type="text/javascript" src="https://wp350.infusionsoft.com/app/webTracking/getTrackingCode"></script>
 <script type="text/javascript" src="https://wp350.infusionsoft.com/resources/external/recaptcha/production/recaptcha.js"></script>
 <script src="https://www.google.com/recaptcha/api.js?onload=onloadInfusionRecaptchaCallback&render=explicit" async="async" defer="defer"></script>
-<script type="text/javascript" src="https://wp350.infusionsoft.com/app/timezone/timezoneInputJs?xid=8e8bda8a798f29a019d8d452a3856f4c"></script> -->
+<script type="text/javascript" src="https://wp350.infusionsoft.com/app/timezone/timezoneInputJs?xid=8e8bda8a798f29a019d8d452a3856f4c"></script>

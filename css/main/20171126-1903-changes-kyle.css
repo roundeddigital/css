@@ -1,0 +1,1253 @@
+/*
+Theme Name:   Rounded Digital
+Description:  This website was developed by the team at Rounded Digital. It's been built for speed, flexibility and curb-appeal - all in pursuit of growing your business. We appreciate your business, and we also appreciate the Uncode framework in which this site was contructed.
+Author:       Rounded Digital
+Author URL:   https://roundeddigital.com
+Template:     uncode
+Version:      1.0
+Text Domain:  uncode-child
+
+Knott Laboratory, LLC: Custom CSS
+11/26 - 19:03
+*/
+
+/* ------------------------------------------------------------------- RND: COMMON STYLES */
+
+/*
+NOTE: Common Colors
+  color: #00a7e1; > Light Blue (accent)
+  color: #1f243f; > Dark Blue (ex: footer area, secondary menu area)
+------------------------------
+
+NOTE: Common Text Styles
+  letter-spacing: -0.02em (headings);
+  font-weight: 300, 500 (thin, heavy);
+  font-family: 'SF-Pro-Display', Roboto, sans-serif;
+  font-size: 34px, 28px, 22px, 19px, 17px, 15px; (H1-H6)
+  ------------------------------
+
+NOTE: Custom Field IDs
+  All (Native to WP):
+  * Title: .t-entry-title {}
+  * Post Type: .t-entry-type
+  * Publish Date: .t-entry-date
+  * Excerpt: .t-entry-excerpt
+
+  Abstracts:
+  * Author: .t-entry-cf-detail-166336 {}
+  * Publisher: .t-entry-cf-detail-942901 {}
+
+  Affiliations:
+  * Abbreviation: .t-entry-cf-detail-153464 {}
+  * Link to Organization: .t-entry-cf-detail-102771 {}
+
+  Careers:
+  * Base Salary: .t-entry-cf-detail-124415 {}
+  * Job Location: .t-entry-cf-detail-183492 {}
+
+  Case:
+  * Year: .t-entry-cf-detail-699204 {}
+
+  Location:
+  * Address: .t-entry-cf-detail-284801 {}
+  * Phone: .t-entry-cf-detail-146640 {}
+
+  Press Writeup:
+  * Source (media/brand name): .t-entry-cf-detail-155643 {}
+
+  Team Member:
+  * Email Address: .t-entry-cf-detail-142935 {}
+  * Job Title: .t-entry-cf-detail-521378 {}
+  * Phone (Direct): .t-entry-cf-detail-110456 {}
+
+*/
+
+/* ------------------------------------------------------------------- RND: Start Custom CSS */
+
+/* ------------------------------------------------------------------- RND: Text Styles */
+
+/* Text Style for H1-H6 */
+
+H1, H2, H3, H4, H5, H6 {
+  letter-spacing: -0.02em;
+  /*line-height: 1.2!important;*/
+  /*font-weight: 300!important;*/
+  /*font-family: 'SF-Pro-Display', Roboto, sans-serif;*/
+  /*font-size: 34px, 28px, 22px, 19px, 17px, 15px (H1-H6);*/
+}
+
+/* Text Style for Leading class beneath headings (leading = on) */
+
+.text-lead, .text-lead>* {
+  font-size: 16px;
+  line-height: 1.5em!important;
+  margin: 3px 0px 0px 0px;
+  font-weight: 500;
+  font-style: italic;
+}
+
+/* Text Style for Paragraph class (p) */
+
+p {
+  line-height: 1.5!important;
+  /*font-weight: 400!important;*/
+  /*font-family: 'SF-Pro-Display', Roboto, sans-serif;*/
+  /*font-size: 14px, 18px (if leading);*/
+}
+
+/* Text Style for intro paragraph on singles*/
+
+.rd-page-lead p {
+  font-size: 20px;
+  font-style: italic;
+}
+
+/* Text Style for Blockquote class (blockquote) */
+
+blockquote {
+  font-size: 25px;
+  font-weight: 300;
+  font-style: italic;
+  color: #00a7e1;
+  margin: 27px 0px 27px 0px;
+  padding: 0px 0px 0px 27px;
+  border-left: none;
+}
+
+/* ------------------------------------------------------------------- RND: Footer Styles */
+
+/*CHANGED: NEW CSS (11/26) */
+
+/*Remove padding from widget areas*/
+
+footer .widget-container {
+  margin: 0px 0px .5em 0px;
+}
+
+/*Remove padding from unordered lists*/
+
+footer .widget-container ul li {
+  padding: 0px 0px 0px 0px;
+}
+
+/*Synchronizes text sizes in footer*/
+
+.site-footer a, .site-footer p, .site-footer li, .site-footer dt, .site-footer dd, .site-footer dl, .site-footer address, .site-footer label, .site-footer small, .site-footer pre, .site-footer code, .site-footer .widget-container.widget_nav_menu li a {
+  font-size: 14px;
+
+}
+
+/*Styles Business Hours    */
+
+.rd-pull-right {
+  float: right;
+}
+
+#sun, #mon, #tue, #wed, #thu, #fri, #sat {
+  line-height: 1.75;
+  font-weight: 500;
+}
+
+/*Footer Icons*/
+
+footer .icon-box.icon-inline {
+  display: inline-table;
+  table-layout: fixed;
+  width: auto;
+  text-align: center;
+  vertical-align: bottom;
+  margin-top: 1em !important;
+  padding-left: 0;
+  padding-right: 1em;
+}
+
+/*Copyright area*/
+
+footer .footer-last .uncell>*:first-child {
+  margin-top: 0;
+  margin-bottom: 1.75em;
+}
+
+/* ------------------------------------------------------------------- RND: Custom Menus in Sidebar/Footer */
+
+/*CHANGED: NEW CSS (11/26) */
+
+/* Styles custom menu in footer */
+
+.widget-container.widget_nav_menu .menu-item a:before, .widget-container.widget_custom_menu .menu-item a:before {
+  display: none!important;
+}
+
+.widget-container.widget_nav_menu li, .widget-container.widget_custom_menu li {
+  text-transform: capitalize;
+}
+
+.widget-container.widget_nav_menu li a, .widget-container.widget_custom_menu li a {
+  padding: 0px 0px 0px 0px;
+}
+
+/* ------------------------------------------------------------------- RND: Sidebar Accordion */
+
+/*CHANGED: NEW CSS (11/26) */
+
+.rd-sidebar-accordion .panel-title>a {
+  display: block;
+  color: #1f243f;
+  position: relative;
+  padding: .75em 0px .75em .5em;
+}
+
+/*Removes top border when panel open*/
+
+.rd-sidebar-accordion .panel-group .panel-heading+.panel-collapse .panel-body {
+  border-top-width: 0;
+  border-top-style: solid;
+}
+
+/*Removes padding above, adds padding below open panel*/
+
+.rd-sidebar-accordion .panel-body {
+  padding: 0px 0px 1.5em 0px;
+}
+
+/*Adds padding to left of menu links, removes margin top*/
+/*COMBAK: This is not working - consider linking styles with list items in footer */
+.post-content ul {
+  list-style: none;
+  padding: 0px 0px 0px 1.5em;
+  margin-top: 0em;
+}
+
+/* ------------------------------------------------------------------- RND: Sidebar Button */
+
+/*COMBAK: Un-tested, needs confirm*/
+
+.rd-sidebar-button .widget-container button, .widget-container .btn {
+  padding: 1em 1em 1em 1em !important;
+}
+
+/* ------------------------------------------------------------------- RND: Single: Team Member Details Table */
+
+/*NOTE: Move to Sidebar Styles*/
+/*Styles title in sidebar*/
+.rd-sidebar-title h2 {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/*Displays details in table format*/
+
+.rd-detail-container {
+  display: inline-block;
+  /*table-layout: fixed;*/
+  padding-right: 27px;
+}
+
+/*Displays LABEL (title) within table cell, and styles text within*/
+
+.rd-detail-container .rd-detail-label {
+  /*min-width: 35px;*/
+  display: table-cell;
+  font-weight: 600;
+  font-size: 15px;
+  color: #1f243f;
+  padding-right: 13px;
+}
+
+/*Displays VALUE within table cell*/
+
+.rd-detail-container .rd-detail-value {
+  display: table-cell;
+}
+
+/*Styles LINKS within table format*/
+
+.rd-detail-container a {
+  font-weight: 500;
+  font-size: 15px;
+}
+
+/*Margin around details box (left/Top)*/
+
+p.rd-details-box {
+  margin: 9px 0px 0px 9px;
+}
+
+/* ------------------------------------------------------------------- RND: Index: Affiliations */
+
+/*COMBAK: Merge into "card" cand "mini-card" sections by class name  */
+
+.rd-team-affiliations .t-entry-cf-detail-153464 {
+  font-weight: 500;
+  font-style: italic;
+  margin-bottom: 0px;
+  font-size: 12px;
+}
+
+.rd-team-affiliations h3.t-entry-title.h6 {
+  margin: 3px 0px 0px 0px!important;
+}
+
+/* ------------------------------------------------------------------- RND: Index: Abstracts */
+
+/*Adds "contributors" before list of authors*/
+
+.t-entry-cf-detail-166336::before {
+  content: "Contributors: ";
+  color: #1f243f;
+  font-weight: 500;
+}
+
+/* ------------------------------------------------------------------- RND: Index: Careers */
+
+/*COMBAK: Merge into "card" cand "mini-card" sections by class name  */
+
+/* Job Title (INDEX SUBTITLE)*/
+
+.t-entry-cf-detail-124415 {
+  font-weight: 500;
+  color: #777777;
+  font-style: italic;
+  margin: 3px 0px 3px 0px!important;
+}
+
+/* Employment Type */
+
+.t-entry-cf-detail-114818 {
+  font-weight: 500;
+  color: #1f243f;
+  letter-spacing: .02em;
+}
+
+/* Additional Compensation  */
+
+.t-entry-cf-detail-293858::before {
+  content: "Other Compensation: ";
+  color: #777777;
+  font-weight: 400;
+  font-size: 13px;
+  font-style: italic;
+}
+
+.t-entry-cf-detail-293858 {
+  font-weight: 500;
+  font-size: 13px;
+  color: #1f243f;
+  display: inline;
+  padding-left: 10px!important;
+}
+
+/* ------------------------------------------------------------------- RND: Index: Team Members */
+
+/*COMBAK: Merge into "card" cand "mini-card" sections by class name  */
+
+/* Job Title (INDEX SUBTITLE)*/
+
+.t-entry-cf-detail-521378, .t-entry-cf-detail-155643, .t-entry-cf-detail-153464 {
+  font-weight: 500;
+  color: #777777;
+  font-style: italic;
+  margin: 3px 0px 3px 0px!important;
+}
+
+/* Excerpt */
+
+.t-entry-excerpt {
+  padding-bottom: 18px!important;
+}
+
+.t-entry-cf-detail-110456 {
+  font-weight: 500;
+  font-size: 15px;
+  color: #1f243f;
+  display: inline;
+}
+
+.t-entry-cf-detail-142935 {
+  font-weight: 500;
+  font-size: 15px;
+  color: #1f243f;
+  display: inline;
+  padding-left: 10px!important;
+}
+
+/* ------------------------------------------------------------------- RND: Single: Team Member */
+
+/*Adds padding to headshot*/
+
+.rd-image {
+  padding-top: 18px;
+}
+
+/*Reduces padding on top in first paragraph*/
+
+.single-block-padding {
+  padding: 18px 36px 36px 36px;
+}
+
+/* Styles job title*/
+
+.rd-subtitle h2 {
+  color: #00a7e1;
+  font-style: italic;
+  /* margin-top: 9px!important; */
+  /* size: 18px!important; */
+  font-size: 18px;
+}
+
+/*Reduces margin to 9px*/
+
+.heading-text.el-text.rd-subtitle {
+  margin-top: 9px!important;
+}
+
+/*Increases font size of introduction paragraph */
+
+.rd-intro p {
+  /*background: blueviolet;*/
+  font-size: 18px;
+}
+
+/* ------------------------------------------------------------------- RND: Mini Cards: Media Appearances */
+
+/*Styles abbreviation in post module for media appearances*/
+
+.rd-team-media-appearances .t-entry-cf-detail-155643 {
+  font-weight: 500;
+  font-style: italic;
+  margin-bottom: 0px;
+  font-size: 12px;
+}
+
+/*Styles title in media appearances Posts Module*/
+
+.rd-team-media-appearances h3.t-entry-title.h6 {
+  margin: 3px 0px 0px 0px!important;
+}
+
+/* ------------------------------------------------------------------- RND: Mobile Styles */
+
+/************************ GLOBAL ***/
+
+/* Hide Excerpts in Carousels on Mobile*/
+
+@media only screen and (max-width: 700px) {
+  .t-entry-excerpt {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  /* Image Size Adjustment in Mobile */
+  .uncode-single-media .uncode-single-media-wrapper>.dummy~img, .uncode-single-media .uncode-single-media-wrapper>.dummy+* {
+    position: absolute;
+    top: 122px;
+    bottom: 0;
+    left: 40px;
+    right: 0;
+    width: 79%;
+  }
+  /*Styles page titles on mobile*/
+  /*.rd-title h1 {
+    font-size: 22px;
+    font-size: 2.5em;
+    line-height: 1em;
+    color: greenyellow;
+  }*/
+  /*Styles subtitle on mobile*/
+  .rd-subtitle h2 {
+    /*color: #00a7e1;*/
+    /*font-style: italic;*/
+    font-size: 18px!important;
+    line-height: 1em;
+  }
+  /* Intro Text for Mobile */
+  .rd-intro p {
+    font-size: 15px;
+    line-height: 1.5em!important;
+    /*background: blueviolet;*/
+  }
+  /*Styles H2 on mobile*/
+  h2 {
+    font-size: 20px !important;
+  }
+  /*Text Lead beneath titles on mobile*/
+  .text-lead, .text-lead>* {
+    font-size: 14px;
+    line-height: 1.25em!important;
+    /*margin: 3px 0px 0px 0px;*/
+    /*font-weight: 500;*/
+    /*font-style: italic;*/
+  }
+  /*Styles paragraph text in mobile*/
+  p {
+    line-height: 1.5!important;
+    font-size: 14px;
+  }
+  /*Decreases top margin on lines beneath headers (<HR>) */
+  .divider-wrapper {
+    margin-top: 9px!important;
+  }
+  /*Sets standard for images laterally (left) on Post Card Stacks (like media appearances)*/
+  .tmb-content-size-4.tmb-content-lateral.tmb>.t-inside .t-entry-visual {
+    height: 125px !important;
+    /* This width makes it smaller with the new padding */
+    /*width: 31.333333% !important;*/
+  }
+}
+
+/************************ LOCAL ***/
+
+@media only screen and (max-width: 700px) {
+  /* Bottom Padding on Mobile */
+  .rd-team-members-outer-column .uncell.vc_custom_1510285633252.border-color-gyho-color.single-block-padding {
+    padding-bottom: 100px;
+  }
+  /* Media Appearances Inner Column Top Padding on Mobile */
+  .pos-top.pos-center.align_left.column_child.col-lg-12.rd-internal-column-media-appearances.half-internal-gutter {
+    padding-top: 30px;
+  }
+  /* START Styling for Mobile (photo, info, header area) */
+  /* https://knottlab.dream.press/team/<employee-name>/ */
+  .rd-details-box span, .rd-details-box a {
+    font-size: 13px!important;
+  }
+  .rd-details-box {
+    margin: 0 0 0 0;
+    padding-top: 25px;
+  }
+  .row.col-half-gutter.limit-width.row-parent {
+    padding-left: 52px;
+  }
+  .row.double-top-padding.double-bottom-padding.no-h-padding.limit-width.row-parent {
+    padding-top: 0;
+  }
+  .pos-top.pos-center.align_left.column_parent.col-lg-9.col-sm-clear.double-internal-gutter.z_index_2 {
+    padding-top: 0;
+  }
+  .row.col-half-gutter.limit-width.row-parent {
+    padding-bottom: 20px;
+  }
+  .pos-top.pos-center.align_left.column_parent.col-lg-8.desktop-hidden.tablet-hidden.col-sm-66.half-internal-gutter {
+    padding: 10px;
+  }
+  /* END Styling for Mobile (photo, info, header area) */
+}
+
+/* ------------------------------------------------------------------- RND: New Classes */
+
+@media only screen and (max-width: 666px) {
+  /* START Styling for Mobile (photo, info, header area) */
+  /* https://knottlab.dream.press/team/<employee-name>/ */
+  .rd-details-box span, .rd-details-box a {
+    font-size: 13px!important;
+  }
+  .rd-details-box {
+    margin: 0 0 0 0;
+    padding-top: 25px;
+  }
+  .row.col-half-gutter.limit-width.row-parent {
+    padding-left: 52px;
+  }
+  .row.double-top-padding.double-bottom-padding.no-h-padding.limit-width.row-parent {
+    padding-top: 0;
+  }
+  .pos-top.pos-center.align_left.column_parent.col-lg-9.col-sm-clear.double-internal-gutter.z_index_2 {
+    padding-top: 0;
+  }
+  .row.col-half-gutter.limit-width.row-parent {
+    padding-bottom: 20px;
+  }
+  .pos-top.pos-center.align_left.column_parent.col-lg-8.desktop-hidden.tablet-hidden.col-sm-66.half-internal-gutter {
+    padding: 10px;
+  }
+  /* END Styling for Mobile (photo, info, header area) */
+}
+
+@media only screen and (min-device-width: 667px) and (max-device-width: 768px) {
+  p.rd-details-box a {
+    font-size: 15px!important;
+  }
+  p.rd-details-box {
+    padding-top: 25px;
+  }
+}
+
+/*Decreases left padding on image*/
+
+.team-details-mobile .pos-top.pos-center.align_left.column_parent.col-lg-4.desktop-hidden.tablet-hidden.col-sm-33.single-internal-gutter {
+  padding-left: 0px;
+}
+
+/*Decreases font size on mobile for job title*/
+
+.team-details-mobile .heading-text.el-text.rd-subtitle-team {
+  margin-top: 9px!important;
+}
+
+/*Styles employee name*/
+
+.rd-employee-title h1 {
+  font-size: 17px!important;
+  line-height: 1em!important;
+}
+
+/*Styles job title*/
+
+.rd-subtitle-team h2 {
+  font-size: 13px!important;
+  font-style: italic;
+  color: #777777;
+  line-height: 1em!important;
+}
+
+/* CSS for Card Posts */
+
+@media only screen and (max-width: 700px) {
+  /* Text Size of Titles on Mobile */
+  .rd-index h3.t-entry-title.h4 {
+    font-size: 15px;
+    /*background: mediumpurple;*/
+  }
+  /* Padding Around Text in Card Posts */
+  .rd-index .t-entry-text-tc.single-block-padding {
+    /*padding: 1em;*/
+    /*background: mediumpurple;*/
+  }
+  /* Gutter Padding */
+  .half-gutter .tmb {
+    padding: 18px;
+  }
+  /* Outer Padding of Card Posts */
+  .half-block-padding {
+    padding: 1em;
+  }
+  /* Padding Underneath Details */
+  .tmb .t-entry-text-tc:not(.no-block-padding) .t-entry>*:first-child {
+    margin: 0px 0px .25em 0px!important;
+  }
+}
+
+/* ------------------------------------------------------------------- RND: ** Darren Styles 20171115 */
+
+/*remove all default padding NOTE: Remove default padding creates troubles with ALL padding in rows*/
+
+.row.double-top-padding.double-bottom-padding.no-h-padding.limit-width.row-parent, .row.full-width.row-parent {
+  padding: 1.5em;
+}
+
+.isotope-wrapper.isotope-inner-padding.half-gutter {
+  padding-left: unset!important;
+  padding-right: unset!important;
+}
+
+.border-color-gyho-color.single-block-padding {
+  /*padding-right: unset;*/
+}
+
+.t-entry-text-tc.single-block-padding {
+  padding: 10px 15px;
+}
+
+/* ------------------------------------------------------------------- RND: Mini Cards */
+
+/*START mini-cards*/
+
+.t-inside {
+  /*padding:unset;*/
+}
+
+.t-entry-type {
+  /*background: yellow;*/
+}
+
+.t-entry-text {
+  /*background: white;*/
+  /*padding-right: 1.2em;*/
+}
+
+.t-entry a {
+  /*background: blue;*/
+  font-size: 1em;
+}
+
+.t-entry-title {
+  /*background: brown;*/
+}
+
+.t-entry-cf-detail-521378, .t-entry-cf-detail-155643, .t-entry-cf-detail-153464 {
+  /*background: red;*/
+}
+
+/*phone number*/
+
+.t-entry-cf-detail-110456 {
+  /*background: green;*/
+  display: inline;
+  font-size: .9em;
+}
+
+/*email address*/
+
+.t-entry-cf-detail-142935 {
+  /*background: orange;*/
+  display: inline;
+  font-size: .9em;
+  /*float:right;*/
+  text-align: right;
+}
+
+/*END mini-cards*/
+
+/* ------------------------------------------------------------------- RND: Singles: Team Member (Employee Details Area) */
+
+/*START team-member-contact-box info area*/
+
+.rd-details-box {
+  padding: unset;
+  /*background: olive;*/
+}
+
+.rd-detail-container {
+  padding: unset;
+}
+
+.rd-detail-value {
+  font-size: .5em;
+  /*background: white;*/
+}
+
+.rd-detail-label {
+  font-size: .5em;
+  /*background: white;*/
+}
+
+/*END team-member-contact-box info area*/
+
+/* ------------------------------------------------------------------- RND: Style Formatting Color Coding */
+
+/*TODO: add .rd-container this to master template*/
+
+.rd-container {
+  /*background: brown;*/
+}
+
+.main-text {}
+
+.heading-text {
+  /*background:lightblue;*/
+}
+
+.rd-title span {
+  /*background: greenyellow;*/
+  font-size: 1.3em;
+}
+
+.employee-job-title span {
+  /*background: coral;*/
+  font-size: 1.1em;
+}
+
+.services-titles {}
+
+.services-titles span {
+  /*background: lightblue;*/
+}
+
+.text-lead {
+  /*background: lightgreen;*/
+}
+
+/*affiliations url link*/
+
+.t-entry-cf-detail-102771 {
+  font-size: 2.5em!important;
+  /*background: mistyrose;*/
+}
+
+.rd-subtitle {
+  /*background: blue;*/
+}
+
+.t-entry-excerpt {
+  /*background: lightgreen;*/
+  /*display:none;*/
+}
+
+.rd-intro {
+  /*background: blueviolet;*/
+}
+
+.rd-subheading {
+  /*background: yellow;*/
+}
+
+.rd-section-heading {
+  /*background: orange;*/
+}
+
+.rd-page-lead {
+  /*background: purple;*/
+}
+
+.rd-column {
+  /*background: grey;*/
+}
+
+/* ------------------------------------------------------------------- RND: Lightbox */
+
+/*Lightbox overlay color*/
+
+.ilightbox-overlay.black {
+  background: -webkit-linear-gradient(bottom, #00356b 16%, #1f243f 85%);
+}
+
+/*Styles title text in lightbox*/
+
+.ilightbox-holder.black .ilightbox-inner-toolbar .ilightbox-title {
+  padding: 1em 1em;
+  text-align: left;
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+/* ------------------------------------------------------------------- RND: Form/Input/Button Text Styles */
+
+/*NOTE: adjustment made (font weight, text style)*/
+
+input, button, select, textarea {
+  line-height: inherit;
+  font-weight: 500!important;
+  font-family: 'SF-Pro-Display', Roboto, Sans-Serif !important;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+}
+
+/* ------------------------------------------------------------------- RND: Modal: Search Overlay */
+
+/*Background for search bar*/
+
+@media (min-width: 960px) {
+  .overlay.overlay-search .search-container {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    font-size: 3.5vh;
+    background: -webkit-linear-gradient(bottom, #00356b 16%, #1f243f 85%);
+    opacity: 0.94;
+  }
+  .overlay.open {
+    opacity: 0.94;
+  }
+}
+
+/* ------------------------------------------------------------------- RND: Modal: Submit New Case */
+
+/* The Modal (background) */
+
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background: -webkit-linear-gradient(bottom, #00356b 16%, #1f243f 85%);
+  /* NOTE: This is the gradient ideally wanting to use for background color */
+  opacity: 0.94;
+  /* Modal transparency NOTE: This targets all items in model, not just background color - need to target color ONLY */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color NOTE: Remove initial background color from modal (if competes with other background colors/gradient) */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity NOTE: Remove initial background color from modal (if competes with other background colors/gradient) */
+  z-index: 1000001;
+  /* Sit on top */
+}
+
+/* Modal Content */
+
+.modal-content {
+  position: relative;
+  background-color: #fff;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 75%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0
+  }
+  to {
+    top: 0;
+    opacity: 1
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0
+  }
+  to {
+    top: 0;
+    opacity: 1
+  }
+}
+
+/* The Close Button */
+
+.close {
+  color: #1f243f;
+  float: right;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.close:hover, .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #ffffff;
+  color: white;
+  /*padding: 20px 20px;*/
+  text-align: center;
+  /*color: #000000*/
+}
+
+.modal-content {
+  padding: 50px;
+}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+/* ------------------------------------------------------------------- RND: Nav Menu: Primary click to call button*/
+
+.rd-btn.btn-accent.btn-circle.btn-flat.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-67437.menu-btn-container.btn {
+  font-size: 15px;
+  font-weight: 800 !important;
+  font-family: 'SF-Pro-Display', Roboto, Sans-Serif !important;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
+/* ------------------------------------------------------------------- RND: Nav Menu: Secondary text style */
+
+.menu-mini.menu-smart a {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 800 !important;
+  font-family: 'SF-Pro-Display', Roboto, Sans-Serif !important;
+  letter-spacing: 0.01em;
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
+/* ------------------------------------------------------------------- RND: Darren's VC RD_MOBILE */
+
+/*VC RD_Mobile*/
+
+@media only screen and (max-width: 569px) {
+  /*remove all default padding*/
+  .border-color-gyho-color.single-block-padding {
+    padding: unset;
+  }
+  .pos-top.pos-center.align_left.column_parent.col-lg-8.desktop-hidden.tablet-hidden.col-sm-66.half-internal-gutter {
+    padding: unset;
+  }
+  /*padding on case cards*/
+  .t-entry-text-tc.single-block-padding {
+    padding: 10px 10px;
+  }
+  /*.row.full-width.row-parent {
+    padding-top: 40px;
+  }*/
+  .row-container.onepage-section {
+    padding-top: 50px;
+  }
+  .t-inside {
+    /*background: deeppink;*/
+    left: -10px;
+    position: absolute;
+    top: 0px!important;
+    width: 296px;
+  }
+  .t-side {
+    padding: unset;
+  }
+  .rd-container {
+    /*background: brown;*/
+    /*padding: 1em;*/
+  }
+  /* ------------------------------------------------------------------- RND: Mini Cards */
+  /*START mini-cards*/
+  .t-inside {
+    /*background: orange;*/
+    /*padding:unset;*/
+  }
+  .t-entry a {
+    /*background: blue;*/
+    font-size: .9em;
+  }
+  .t-entry-title {
+    /*background: brown;*/
+  }
+  .t-entry-cf-detail-521378, .t-entry-cf-detail-155643, .t-entry-cf-detail-153464 {
+    /*background: red;*/
+    font-size: .8em;
+  }
+  /*phone number*/
+  .t-entry-cf-detail-110456 {
+    /*background: green;*/
+    display: inline;
+    font-size: .6em;
+  }
+  /*email address*/
+  .t-entry-cf-detail-142935 {
+    /*background: orange;*/
+    display: inline;
+    font-size: .6em;
+    /*float:right;*/
+    text-align: right;
+  }
+  /*END mini-cards*/
+  /*START team-member-contact-box info area*/
+  .rd-details-box {
+    padding: unset;
+    /*background: olive;*/
+  }
+  .rd-detail-container {
+    padding: unset;
+  }
+  .rd-detail-value {
+    font-size: .5em;
+    /*background: white;*/
+  }
+  .rd-detail-label {
+    font-size: .5em;
+    /*background: white;*/
+  }
+  /*END team-member-contact-box info area*/
+  .row.no-top-padding.no-bottom-padding.no-h-padding.full-width.row-parent {
+    padding: unset;
+  }
+  .t-entry-excerpt {
+    display: none;
+  }
+  .rd-title span {
+    /*background: greenyellow;*/
+    font-size: .8em;
+  }
+  .employee-job-title span {
+    /*background: coral;*/
+    font-size: 1.1em;
+  }
+  .rd-subtile {
+    /*background: blue;*/
+  }
+  .rd-intro {
+    /*background: blueviolet;*/
+  }
+  .rd-subheading {
+    /*background: yellow;*/
+  }
+  .rd-section-heading {
+    /*background: lightblue;*/
+  }
+  .rd-page-lead {
+    /*background: purple;*/
+  }
+}
+
+/* ------------------------------------------------------------------- RND: Device Formatting: Non-Retina Screens */
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {}
+
+/* ------------------------------------------------------------------- RND: Device Formatting: Retina Screens */
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {}
+
+/* ------------------------------------------------------------------- RND: Device Formatting: iPad 3, 4 and Pro 9.7" */
+
+/* Portrait and Landscape */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+  /*remove all default padding*/
+  .border-color-gyho-color.single-block-padding {
+    padding: unset;
+    padding-left: 2.3em;
+  }
+  .row.full-width.row-parent {
+    padding-top: 40px;
+  }
+  .rd-container {
+    /*background: brown;*/
+    /*padding: 1em;*/
+  }
+  /*START mini-cards*/
+  .t-inside {
+    /*padding:unset;*/
+  }
+  .t-entry a {
+    /*background: blue;*/
+    font-size: .9em;
+  }
+  .t-entry-title {
+    /*background: brown;*/
+  }
+  .t-entry-cf-detail-521378, .t-entry-cf-detail-155643, .t-entry-cf-detail-153464 {
+    /*background: red;*/
+    font-size: .8em;
+  }
+  /*phone number*/
+  .t-entry-cf-detail-110456 {
+    /*background: green;*/
+    display: inline;
+    font-size: .8em;
+  }
+  /*email address*/
+  .t-entry-cf-detail-142935 {
+    /*background: orange;*/
+    display: inline;
+    font-size: .8em;
+    /*float:right;*/
+    text-align: right;
+  }
+  /*END mini-cards*/
+  /*START team-member-contact-box info area*/
+  .rd-details-box {
+    padding: unset;
+    /*background: olive;*/
+  }
+  .rd-detail-container {
+    padding: unset;
+  }
+  .rd-detail-value {
+    font-size: .5em;
+    /*background: white;*/
+  }
+  .rd-detail-label {
+    font-size: .5em;
+    /*background: white;*/
+  }
+  /*END team-member-contact-box info area*/
+  .t-entry-excerpt {
+    /*display: none;*/
+  }
+  .rd-title span {
+    /*background: greenyellow;*/
+    font-size: 1.2em;
+  }
+  .employee-job-title span {
+    /*background: coral;*/
+    font-size: 1.1em;
+  }
+  .rd-subtile {
+    /*background: blue;*/
+  }
+  .rd-intro {
+    /*background: blueviolet;*/
+  }
+  .rd-subheading {
+    /*background: yellow;*/
+  }
+  .rd-section-heading {
+    /*background: orange;*/
+  }
+  .rd-page-lead {
+    /*background: purple;*/
+  }
+}
+
+/* Portrait */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  /*remove all default padding*/
+  .border-color-gyho-color.single-block-padding {
+    padding: unset;
+  }
+}
+
+/* ------------------------------------------------------------------- RND: Device Formatting: iPhone 5, 5S, 5C and 5SE */
+
+/* Portrait and Landscape */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {}
+
+/* Portrait */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {}
+
+/* Landscape */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {}
+
+/* ------------------------------------------------------------------- RND: Device Formatting: iPhone 6, 6S, 7 and 8 */
+
+/* Portrait and Landscape */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {}
+
+/* Portrait */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {}
+
+/* Landscape */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {}
+
+/* ------------------------------------------------------------------- RND: Device Formatting: iPhone 6+, 7+ and 8+ */
+
+/* Portrait and Landscape */
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {}
+
+/* Portrait */
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {}
+
+/* Landscape */
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {}
+
+/* ------------------------------------------------------------------- RND: Device Formatting: iPhone X */
+
+/* Portrait and Landscape */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {}
+
+/* Portrait */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {}
+
+/* Landscape */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {}

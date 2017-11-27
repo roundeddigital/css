@@ -446,9 +446,9 @@ MODAL: APPOINTMENT REQUEST
   /* Full height */
   overflow: auto;
   /* Enable scroll if needed */
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(31, 36, 63);
   /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(31, 36, 63, 0.9);
   /* Black w/ opacity */
   z-index: 1000001;
   /* Sit on top */
@@ -799,6 +799,140 @@ MOBILE STYLES
   }
 }
 
+/* Sidebar Accordian START */
+/* ------------------------------------------------------------------- RND: SIDEBAR */
+
+.heading-text.el-text.rd-sidebar-title {
+    font-size: 12px;
+    color: #1f243f;
+    text-transform: uppercase;
+    letter-spacing: 0.01em;
+    font-weight: 800 !important;
+    font-family: 'SF-Pro-Display', Roboto, Sans-Serif !important;
+}
+
+/*Reduces top margin in widget containers*/
+.widget-container {
+  margin: 2em 0px 0px 0px;
+}
+
+/*.widget-container.widget_nav_menu li a,*/
+/*.widget-container.widget_custom_menu li a {*/
+/*  font-size: 13px;*/
+/*}*/
+
+/* ------------------------------------------------------------------- RND: Sidebar: Accordion Styles */
+
+/*CHANGED: NEW CSS (11/26) */
+
+/*NOTE: PANEL BUTTON*/
+
+/*Decreases padding, colors text blue*/
+
+.rd-sidebar-accordion .panel-title>a {
+  display: block;
+  color: #1f243f;
+  position: relative;
+  padding: .75em 0px .75em .5em;
+}
+
+/*NOTE: OPEN PANEL*/
+
+/*Removes top border beneath open panel */
+
+.rd-sidebar-accordion .panel-group .panel-heading+.panel-collapse .panel-body {
+  border-top-width: 0;
+  border-top-style: solid;
+}
+
+/*Removes padding above/adds padding below open panel*/
+
+.rd-sidebar-accordion .panel-body {
+  padding: 0px 0px 1.5em 0px;
+}
+
+/*Adds padding to left of menu links, removes margin top*/
+
+.post-content ul {
+  list-style: none;
+  padding: 0px 0px 0px 1.5em;
+  margin-top: 0em;
+}
+
+/* ------------------------------------------------------------------- RND: Menu Styles in widgets */
+/*CHANGED: NEW CSS (11/26) */
+
+/*Styles text within widget menus*/
+.widget-container.widget_nav_menu li a,
+.widget-container.widget_custom_menu li a {
+    padding: 0px 0px 0px 0px;
+    text-transform: capitalize;
+    font-size: 13px;
+
+}
+
+/* Un-Styles list item NOTE: this may target items in widgets only */
+.widget-container.widget_nav_menu .menu-item a:before,
+.widget-container.widget_custom_menu .menu-item a:before {
+display:none;
+}
+
+
+/* ------------------------------------------------------------------- RND: Footer Styles */
+
+/*CHANGED: NEW CSS (11/26) */
+
+/*Remove padding from widget areas*/
+
+footer .widget-container {
+  margin: 0px 0px .5em 0px;
+}
+
+/*Remove padding from unordered lists*/
+
+.widget-container ul li {
+  padding: 0px 0px 0px 0px;
+}
+
+/*Synchronizes text sizes in footer*/
+
+.site-footer a, .site-footer p, .site-footer li, .site-footer dt, .site-footer dd, .site-footer dl, .site-footer address, .site-footer label, .site-footer small, .site-footer pre, .site-footer code, .site-footer .widget-container.widget_nav_menu li a {
+  font-size: 14px;
+}
+
+/*Styles Business Hours    */
+
+.rd-pull-right {
+  float: right;
+}
+
+#sun, #mon, #tue, #wed, #thu, #fri, #sat {
+  line-height: 1.75;
+  font-weight: 500;
+}
+
+/*Footer Icons*/
+
+footer .icon-box.icon-inline {
+  display: inline-table;
+  table-layout: fixed;
+  width: auto;
+  text-align: center;
+  vertical-align: bottom;
+  margin-top: 1em !important;
+  padding-left: 0;
+  padding-right: 1em;
+}
+
+/*Copyright area*/
+
+/*footer .footer-last .uncell>*:first-child {*/
+/*  margin-top: 0;*/
+/*  margin-bottom: 1.75em;*/
+/*}*/
+
+/*Sidebar Accordian END*/
+
 /* NEW DARREN 20171115 */
 .row.unequal.no-top-padding.no-bottom-padding.no-h-padding.full-width.row-parent {
     padding: unset;
@@ -1013,10 +1147,11 @@ span.rd-detail-value  {
         /*font-family: inherit;*/
         font-size: inherit;
         line-height: inherit;
-        font-weight: 800!important;
+        /*font-weight: 800!important;*/
+        font-weight: 600!important;
         font-family: 'SF-Pro-Display', Roboto, Sans-Serif !important;
         letter-spacing: .01em;
-        text-transform: uppercase;
+        text-transform: normal;
     }
 
 

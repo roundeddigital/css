@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+
+      .outer,
+      .infusion-field {
+       background:grey;
+
+        width:100%
+
+       /* Firefox */
+       display:-moz-box;
+       -moz-box-pack:center;
+       -moz-box-align:center;
+
+       /* Safari and Chrome */
+       display:-webkit-box;
+       -webkit-box-pack:center;
+       -webkit-box-align:center;
+
+       /* W3C */
+       display:box;
+       box-pack:center;
+       box-align:center;
+      }
+      .inner,
+      .infusion-field {
+        border: 1px solid red;
+
+        width:50%;
+      }
+      .infusion-field-input-container {
+        width:95%!important;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outer">
+        <div class="inner">
+          <span>Name: </span><span>Darren</span>
+        </div>
+        <div class="inner">
+          <span>Namedfdfdfd: </span><span>Darren</span>
+        </div>
+    </div>
+    <!-- First Name -->
+    <div class="outer">
+      <div class="infusion-field">
+        <div class="inner">
+          <label class="infusion-field-label" for="inf_field_FirstName">First Name *</label>
+        </div>
+        <div class="inner">
+          <input class="infusion-field-input-container" id="inf_field_FirstName" name="inf_field_FirstName" placeholder="First Name *" type="text" />
+        </div>
+      </div>
+    </div>
+
+    <div class="outer">
+      <!-- First Name -->
+      <div class="infusion-field">
+        <div class="inner">
+        <!-- <label class="infusion-field-label" for="inf_field_FirstName">First Name *</label> -->
+        <input class="infusion-field-input-container" id="inf_field_FirstName" name="inf_field_FirstName" placeholder="First Name *" type="text" />
+      </div>
+      <!-- Last Name -->
+          <div class="inner">
+        <!-- <label class="infusion-field-label" for="inf_field_LastName">Last Name *</label> -->
+        <input class="infusion-field-input-container" id="inf_field_LastName" name="inf_field_LastName" placeholder="Last Name *" type="text" />
+      </div>
+      </div>
+    </div>
+
+    <!-- Company -->
+    <div class="infusion-field">
+      <label class="infusion-field-label" for="inf_field_Company">Company *</label>
+      <input class="infusion-field-input-container" id="inf_field_Company" name="inf_field_Company" placeholder="Company *" type="text" />
+    </div>
+      <div class="test">
+    <!-- Email -->
+    <div class="infusion-field">
+      <label class="infusion-field-label" for="inf_field_Email">Email *</label>
+      <input class="infusion-field-input-container" id="inf_field_Email" name="inf_field_Email" placeholder="Email *" type="text" />
+    </div>
+    <!-- Phone -->
+    <div class="infusion-field">
+      <label class="infusion-field-label" for="inf_field_Phone1">Phone *</label>
+      <input class="infusion-field-input-container" id="inf_field_Phone1" name="inf_field_Phone1" placeholder="Phone *" type="text" />
+    </div>
+  </div>
+    <!-- Claim ID -->
+    <div class="infusion-field">
+      <label class="infusion-field-label" for="inf_custom_ClaimID">Claim ID#</label>
+      <input class="infusion-field-input-container" id="inf_custom_ClaimID" name="inf_custom_ClaimID" placeholder="Claim ID#" type="text" />
+    </div>
+  </body>
+</html>
