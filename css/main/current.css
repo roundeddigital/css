@@ -446,9 +446,9 @@ MODAL: APPOINTMENT REQUEST
   /* Full height */
   overflow: auto;
   /* Enable scroll if needed */
-  background-color: rgb(31, 36, 63);
+  background-color: rgb(0, 0, 0);
   /* Fallback color */
-  background-color: rgba(31, 36, 63, 0.9);
+  background-color: rgba(0, 0, 0, 0.4);
   /* Black w/ opacity */
   z-index: 1000001;
   /* Sit on top */
@@ -1013,11 +1013,10 @@ span.rd-detail-value  {
         /*font-family: inherit;*/
         font-size: inherit;
         line-height: inherit;
-        /*font-weight: 800!important;*/
-        font-weight: 600!important;
+        font-weight: 800!important;
         font-family: 'SF-Pro-Display', Roboto, Sans-Serif !important;
         letter-spacing: .01em;
-        text-transform: normal;
+        text-transform: uppercase;
     }
 
 

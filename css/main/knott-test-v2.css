@@ -379,20 +379,14 @@ TEAM MEMBER SINGLES
 .heading-text.el-text.rd-subtitle {
   margin-top: 9px!important;
 }
-.heading-text.el-text {
-    padding: 0em 1em;
-}
 
 /*Increases font size of introduction paragraph */
 
 .rd-intro p {
-  /*background: blueviolet;*/
+  background: blueviolet;
   font-size: 18px;
 }
 
-.icon-box.icon-box-top.icon-inline {
-    padding-top: 2em;
-}
 /*PROFESSIONAL AFFILIATIONS POST MODULE*/
 
 .rd-team-affiliations .t-entry-cf-detail-153464 {
@@ -446,9 +440,9 @@ MODAL: APPOINTMENT REQUEST
   /* Full height */
   overflow: auto;
   /* Enable scroll if needed */
-  background-color: rgb(31, 36, 63);
+  background-color: rgb(0, 0, 0);
   /* Fallback color */
-  background-color: rgba(31, 36, 63, 0.9);
+  background-color: rgba(0, 0, 0, 0.4);
   /* Black w/ opacity */
   z-index: 1000001;
   /* Sit on top */
@@ -520,6 +514,7 @@ MODAL: APPOINTMENT REQUEST
 
 .modal-content {
   padding: 50px;
+  /*background-color: red;*/
 }
 
 .modal-footer {
@@ -623,7 +618,7 @@ MOBILE STYLES
   .rd-intro p {
     font-size: 15px;
     line-height: 1.5em!important;
-    /*background: blueviolet;*/
+    background: blueviolet;
   }
   /*Styles H2 on mobile*/
   h2 {
@@ -778,12 +773,12 @@ MOBILE STYLES
   /* Text Size of Titles on Mobile */
   .rd-index h3.t-entry-title.h4 {
     font-size: 15px;
-    /*background: mediumpurple;*/
+    background: mediumpurple;
   }
   /* Padding Around Text in Card Posts */
   .rd-index .t-entry-text-tc.single-block-padding {
     /*padding: 1em;*/
-      /*background: mediumpurple;*/
+      background: mediumpurple;
   }
   /* Gutter Padding */
   .half-gutter .tmb {
@@ -800,13 +795,11 @@ MOBILE STYLES
 }
 
 /* NEW DARREN 20171115 */
-.row.unequal.no-top-padding.no-bottom-padding.no-h-padding.full-width.row-parent {
-    padding: unset;
-}
 
 /*remove all default padding*/
 .row.double-top-padding.double-bottom-padding.no-h-padding.limit-width.row-parent,
 .row.full-width.row-parent {
+  /*background: lightgreen;*/
   padding: 1.5em;
 }
 
@@ -817,6 +810,7 @@ MOBILE STYLES
 
 .border-color-gyho-color.single-block-padding {
   /*padding-right: unset;*/
+  /*background: pink;*/
 }
 
 .t-entry-text-tc.single-block-padding {
@@ -826,39 +820,38 @@ MOBILE STYLES
 /*START mini-cards*/
 
 .t-inside {
+  /*background: pink;*/
   /*padding:unset;*/
 }
 .t-entry-type {
-  /*background: yellow;*/
+  background: yellow;
 }
 
 .t-entry-text {
-  /*background: white;*/
+  background: white;
   /*padding-right: 1.2em;*/
 
 }
-.t-entry {
-    padding: .5em 2em;
-}
+
 .t-entry a {
-  /*background: blue;*/
+  background: blue;
   font-size: 1em;
 }
 
 .t-entry-title {
-  /*background: brown;*/
+  background: brown;
 }
 
 .t-entry-cf-detail-521378,
 .t-entry-cf-detail-155643,
 .t-entry-cf-detail-153464 {
-  /*background: red;*/
+  background: red;
 }
 
 /*phone number*/
 
 .t-entry-cf-detail-110456 {
-  /*background: green;*/
+  background: green;
   display: inline;
   font-size: .9em;
 }
@@ -866,7 +859,7 @@ MOBILE STYLES
 /*email address*/
 
 .t-entry-cf-detail-142935 {
-  /*background: orange;*/
+  background: orange;
   display: inline;
   font-size: .9em;
   /*float:right;*/
@@ -878,87 +871,86 @@ MOBILE STYLES
 /*START team-member-contact-box info area*/
 .rd-details-box {
   padding: unset;
-  /*background: olive;*/
+  background: olive;
 }
 .rd-detail-container {
   padding: unset;
 }
 .rd-detail-value {
   font-size: .5em;
-  /*background: white;*/
-}
-
-span.rd-detail-value  {
-  /*font-size: .9em;*/
-  /*background: red;*/
+  background: white;
 }
 .rd-detail-label {
   font-size: .5em;
-  /*background: white;*/
+  background: white;
 }
 /*END team-member-contact-box info area*/
 
 /*TODO: add .rd-container this to master template*/
 
 .rd-container {
-  /*background: brown;*/
+  background: brown;
 }
 
 .main-text {
+  /*background:red;*/
 }
 
 .heading-text {
-  /*background:lightblue;*/
+  background:lightblue;
 }
 
 .rd-title span {
-  /*background: greenyellow;*/
+  background: greenyellow;
   font-size: 1.3em;
 }
 .employee-job-title span {
-  /*background: coral;*/
+  background: coral;
   font-size: 1.1em;
 }
 
 .services-titles {
+  /*background:lightblue;*/
 }
 
 .services-titles span {
-  /*background: lightblue;*/
+  background: lightblue;
 }
 
 .text-lead {
-  /*background: lightgreen;*/
+  /*background: green;*/
+  background: lightgreen;
 }
 /*affiliations url link*/
 .t-entry-cf-detail-102771 {
+  background: mistyrose;
   font-size: 2.5em!important;
-  /*background: mistyrose;*/
 }
 
 .rd-subtitle {
-  /*background: blue;*/
+  background: blue;
 }
 
 .t-entry-excerpt {
-  /*background: lightgreen;*/
+  /*background: green;*/
+  background: lightgreen;
   /*display:none;*/
 }
 
 .rd-intro {
-  /*background: blueviolet;*/
+  background: blueviolet;
 }
 
 .rd-subheading {
-  /*background: yellow;*/
+  background: yellow;
 }
 
 .rd-section-heading {
-  /*background: orange;*/
+  background: orange;
 }
 
 .rd-page-lead {
-  /*background: purple;*/
+  background: purple;
 }
 
 .rd-column {
@@ -1013,11 +1005,10 @@ span.rd-detail-value  {
         /*font-family: inherit;*/
         font-size: inherit;
         line-height: inherit;
-        /*font-weight: 800!important;*/
-        font-weight: 600!important;
+        font-weight: 800!important;
         font-family: 'SF-Pro-Display', Roboto, Sans-Serif !important;
         letter-spacing: .01em;
-        text-transform: normal;
+        text-transform: uppercase;
     }
 
 
@@ -1050,63 +1041,8 @@ span.rd-detail-value  {
   text-transform: uppercase;
   margin-top: .5em;
   margin-bottom: .5em;
-  /*background: yellow;*/
+  background: yellow;
 }
-
-/* CARDS START */
-.rd-index .t-entry {
-  padding: 2em;
-}
-.rd-index span {
-  /*background:lightblue;*/
-  font-size: 1.1em;
-}
-.rd-index .rd-detail-container .rd-detail-label {
-  /*background: mistyrose;*/
-  display: table-cell;
-  font-size: 1.2em;
-  padding-right: .5em;
-}
-.rd-index .t-entry-cf-detail-521378 {
-  /*background: yellow;*/
-}
-.rd-index .t-entry-title {
-  /*background: greenyellow;*/
-}
-.rd-index p {
-  /*background: coral;*/
-}
-/* CARDS END */
-
- /* MINI CARDS START */
- .t-entry-text-tc {
-     padding: unset!important;
- }
- .rd-mini-cards .t-entry {
-   padding: 1em;
- }
-.rd-mini-cards
-.rd-detail-label,
-.rd-detail-value {
-  /*background: mistyrose;*/
-  display: table-cell;
-}
-.rd-mini-cards .rd-detail-label {
-  /*icon size*/
-  font-size: .9em;
-  padding-right: .2em;
-}
-.rd-mini-cards .rd-detail-value a {
-  /*phone number and email*/
-  font-size: 1.8em;
-}
-.rd-mini-cards .t-entry-cf-detail-521378 {
-  /*background: yellow;*/
-}
-.rd-mini-cards .t-entry-title {
-  /*background: greenyellow;*/
-}
-/* MINI CARDS END */
 
 /*VC RD_Mobile*/
 
@@ -1127,9 +1063,10 @@ span.rd-detail-value  {
   }*/
   .row-container.onepage-section {
     padding-top: 50px;
+    /*background: mistyrose;*/
   }
   .t-inside {
-    /*background: deeppink;*/
+    background: deeppink;
     left: -10px;
     position: absolute;
     top: 0px!important;
@@ -1138,51 +1075,59 @@ span.rd-detail-value  {
   .t-side {
     padding: unset;
   }
-
-  /* padding on cards */
-  .rd-index .t-entry {
-    padding: 1em;
-    /*background: deeppink;*/
+  .rd-container {
+    background: brown;
+    /*padding: 1em;*/
+  }
+  /*START mini-cards*/
+  .t-inside {
+    background: orange;
+    /*padding:unset;*/
   }
   .t-entry a {
-    /*background: blue;*/
+    background: blue;
     font-size: .9em;
+  }
+  .t-entry-title {
+    background: brown;
   }
   .t-entry-cf-detail-521378,
   .t-entry-cf-detail-155643,
   .t-entry-cf-detail-153464 {
-    /*background: red;*/
+    background: red;
     font-size: .8em;
   }
   /*phone number*/
   .t-entry-cf-detail-110456 {
-    /*background: green;*/
+    background: green;
     display: inline;
     font-size: .6em;
   }
   /*email address*/
   .t-entry-cf-detail-142935 {
-    /*background: orange;*/
+    background: orange;
     display: inline;
     font-size: .6em;
+    /*float:right;*/
     text-align: right;
   }
+  /*END mini-cards*/
 
   /*START team-member-contact-box info area*/
   .rd-details-box {
     padding: unset;
-    /*background: olive;*/
+    background: olive;
   }
   .rd-detail-container {
     padding: unset;
   }
   .rd-detail-value {
     font-size: .5em;
-    /*background: white;*/
+    background: white;
   }
   .rd-detail-label {
     font-size: .5em;
-    /*background: white;*/
+    background: white;
   }
   /*END team-member-contact-box info area*/
 
@@ -1193,27 +1138,27 @@ span.rd-detail-value  {
     display: none;
   }
   .rd-title span {
-    /*background: greenyellow;*/
+    background: greenyellow;
     font-size: .8em;
   }
   .employee-job-title span {
-    /*background: coral;*/
+    background: coral;
     font-size: 1.1em;
   }
   .rd-subtile {
-    /*background: blue;*/
+    background: blue;
   }
   .rd-intro {
-    /*background: blueviolet;*/
+    background: blueviolet;
   }
   .rd-subheading {
-    /*background: yellow;*/
+    background: yellow;
   }
   .rd-section-heading {
-    /*background: lightblue;*/
+    background: lightblue;
   }
   .rd-page-lead {
-    /*background: purple;*/
+    background: purple;
   }
 }
 
@@ -1239,35 +1184,36 @@ span.rd-detail-value  {
     padding-top: 40px;
   }
   .rd-container {
-    /*background: brown;*/
+    background: brown;
     /*padding: 1em;*/
   }
   /*START mini-cards*/
   .t-inside {
+    /*background: pink;*/
     /*padding:unset;*/
   }
   .t-entry a {
-    /*background: blue;*/
+    background: blue;
     font-size: .9em;
   }
   .t-entry-title {
-    /*background: brown;*/
+    background: brown;
   }
   .t-entry-cf-detail-521378,
   .t-entry-cf-detail-155643,
   .t-entry-cf-detail-153464 {
-    /*background: red;*/
+    background: red;
     font-size: .8em;
   }
   /*phone number*/
   .t-entry-cf-detail-110456 {
-    /*background: green;*/
+    background: green;
     display: inline;
     font-size: .8em;
   }
   /*email address*/
   .t-entry-cf-detail-142935 {
-    /*background: orange;*/
+    background: orange;
     display: inline;
     font-size: .8em;
     /*float:right;*/
@@ -1277,45 +1223,45 @@ span.rd-detail-value  {
   /*START team-member-contact-box info area*/
   .rd-details-box {
     padding: unset;
-    /*background: olive;*/
+    background: olive;
   }
   .rd-detail-container {
     padding: unset;
   }
   .rd-detail-value {
     font-size: .5em;
-    /*background: white;*/
+    background: white;
   }
   .rd-detail-label {
     font-size: .5em;
-    /*background: white;*/
+    background: white;
   }
   /*END team-member-contact-box info area*/
   .t-entry-excerpt {
     /*display: none;*/
   }
   .rd-title span {
-    /*background: greenyellow;*/
+    background: greenyellow;
     font-size: 1.2em;
   }
   .employee-job-title span {
-    /*background: coral;*/
+    background: coral;
     font-size: 1.1em;
   }
   .rd-subtile {
-    /*background: blue;*/
+    background: blue;
   }
   .rd-intro {
-    /*background: blueviolet;*/
+    background: blueviolet;
   }
   .rd-subheading {
-    /*background: yellow;*/
+    background: yellow;
   }
   .rd-section-heading {
-    /*background: orange;*/
+    background: orange;
   }
   .rd-page-lead {
-    /*background: purple;*/
+    background: purple;
   }
 }
 
