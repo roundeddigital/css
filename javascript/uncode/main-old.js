@@ -1,19 +1,39 @@
-<script>
-
 /* ========================================================================================== */
 
-// js
-var n = new Date();
-var d = n.getDay();
+/* ******************** RD ***
+Footer Date Selection
+*********************** RD ***/
 
-if(d==0) document.getElementById('sun').style.color='#00a7e1';
-if(d==1) document.getElementById('mon').style.color='#00a7e1';
-if(d==2) document.getElementById('tue').style.color='#00a7e1';
-if(d==3) document.getElementById('wed').style.color='#00a7e1';
-if(d==4) document.getElementById('thu').style.color='#00a7e1';
-if(d==5) document.getElementById('fri').style.color='#00a7e1';
-if(d==6) document.getElementById('sat').style.color='#00a7e1';
+/* Footer Date Selection */
+jQuery(document).ready(function($) {
+  jQuery('li.day').eq(new Date().getDay()).addClass('today');
+});
 
+/* Drop Down Menu */
+jQuery('.closeall').click(function() {
+  jQuery('.panel-collapse.in')
+    .collapse('hide');
+});
+
+jQuery('.arrow-right').hide();
+jQuery('.arrow-down').hide();
+jQuery('a.accordion-toggle').hover(function() {
+  if (!jQuery(this).find('.arrow-down').is(':visible')) {
+    jQuery(this).find('.arrow-right').show();
+  }
+}, function() {
+  jQuery(this).find('.arrow-right').hide();
+});
+
+jQuery('a').click(function() {
+  jQuery(this).find('.arrow-right').hide()
+  if (jQuery(this).find('.arrow-down').is(':visible')) {
+    jQuery(this).find('.arrow-down').hide();
+  } else {
+    jQuery('.arrow-down').hide();
+    jQuery(this).find('.arrow-down').show();
+  }
+});
 
 /* ========================================================================================== */
 
@@ -21,26 +41,21 @@ if(d==6) document.getElementById('sat').style.color='#00a7e1';
 Modal - Appointment Request
 *********************** RD ***/
 
-	document.querySelector(".open-modal").addEventListener("click", openModal);
-	document.querySelector(".open-modal-2").addEventListener("click", openModal);
-	var modal = document.getElementById('myModal');
-	var span = document.getElementsByClassName("close")[0];
+document.querySelector(".open-modal").addEventListener("click", openModal);
+var modal = document.getElementById('myModal');
+var span = document.getElementsByClassName("close")[0];
 
-	function openModal() {
-		if(modal) {
-			console.log("Modal Exists");
-		}
-		console.log("Open Modal");
-		modal.style.display = "block";
-	}
-	span.onclick = function() {
-		modal.style.display = "none";
-	}
-	window.onclick = function(event) {
-		if (event.target == modal) {
-			modal.style.display = "none";
-		}
-	}
+function openModal() {
+  modal.style.display = "block";
+}
+span.onclick = function() {
+  modal.style.display = "none";
+}
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
 
 // Phone Number
 jQuery('.t-entry-cf-detail-110456').each(function() {
@@ -76,4 +91,3 @@ jQuery('.t-entry-cf-detail-142935').each(function() {
     '</span>';
     jQuery(this).append(html);
 });
-	</script>
