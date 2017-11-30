@@ -1415,33 +1415,38 @@ span.rd-detail-value  {
 }
 
 /* ------------------------------------------------------------------- DH RND: CARD */
-/* CARDS START */
-
 /*Above  Title:*/
-.t-entry-type {}
-.t-entry-date {}
-.t-entry-cf-detail-699204 {}
-.t-entry-cf-detail-183492 {}
-.t-entry-cf-detail-153464 {}
-.t-entry-cf-detail-942901 {}
-.t-entry-cf-detail-155643 {}
+.t-entry-type,
+.t-entry-date,
+.t-entry-cf-detail-699204,
+.t-entry-cf-detail-183492,
+.t-entry-cf-detail-153464,
+.t-entry-cf-detail-942901,
+.t-entry-cf-detail-155643 {
+  color: #00a7e1;
+  font-weight: 500;
+}
 
 /*Title:*/
 .t-entry-title {}
 
 /*Below Title:*/
-.t-entry-cf-detail-521378 {}
-.t-entry-cf-detail-124415 {}
-.t-entry-cf-detail-284801 {}
+.t-entry-cf-detail-521378,
+.t-entry-cf-detail-124415,
+.t-entry-cf-detail-284801 {
+  font-weight: 500;
+  color: #777;
+  font-style: italic;
+}
 
 /*Excerpt:*/
 .t-entry-excerpt {}
 
 /*Below Excerpt:*/
-.t-entry-cf-detail-142935 {}
-.t-entry-cf-detail-110456 {}
-.t-entry-cf-detail-146640 {}
-.t-entry-cf-detail-102771 {}
+.t-entry-cf-detail-142935,
+.t-entry-cf-detail-110456,
+.t-entry-cf-detail-146640,
+.t-entry-cf-detail-102771,
 .t-entry-cf-detail-166336 {}
 
 
@@ -1471,21 +1476,28 @@ span.rd-detail-value  {
 
 /* ------------------------------------------------------------------- DH RND: MINI CARD */
 /*Above  Title:*/
-.t-entry-type {}
-.t-entry-date {}
-.t-entry-cf-detail-699204 {}
-.t-entry-cf-detail-183492 {}
-.t-entry-cf-detail-153464 {}
-.t-entry-cf-detail-942901 {}
-.t-entry-cf-detail-155643 {}
+.t-entry-type,
+.t-entry-date,
+.t-entry-cf-detail-699204,
+.t-entry-cf-detail-183492,
+.t-entry-cf-detail-153464,
+.t-entry-cf-detail-942901,
+.t-entry-cf-detail-155643 {
+  color: #00a7e1;
+  font-weight: 500;
+}
 
 /*Title:*/
 .t-entry-title {}
 
 /*Below Title:*/
-.t-entry-cf-detail-521378 {}
-.t-entry-cf-detail-124415 {}
-.t-entry-cf-detail-284801 {}
+.t-entry-cf-detail-521378,
+.t-entry-cf-detail-124415,
+.t-entry-cf-detail-284801 {
+  font-weight: 500;
+  color: #777;
+  font-style: italic;
+}
 
 /*Excerpt:*/
 .t-entry-excerpt {}

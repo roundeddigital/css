@@ -602,6 +602,117 @@ MOBILE STYLES
   .t-entry-excerpt {
     display: none;
   }
+  /* ------------------------------------------------------------------- DH: Header Font Mobile*/
+  /*.uncont.no-block-padding.col-custom-width span {
+    font-size: .9em;
+    color:red;
+  }*/
+
+  .heading-text span {
+    font-size: 1.2em;
+    /*color: blue;*/
+  }
+
+
+
+  .uncont.no-block-padding.col-custom-width {
+    padding-top: 2em!important;
+  }
+  /* ------------------------------------------------------------------- DH: Pill Buttons Mobile */
+  a.custom-link.btn.border-width-0.btn-accent.btn-circle.btn-flat.btn-icon-left,
+  .rd-inline-btn {
+    width: 20em;
+  }
+  /* ------------------------------------------------------------------- DH: Padding Mobile*/
+  .row.double-top-padding.double-bottom-padding.double-h-padding.limit-width.row-parent.row-header {
+    /*padding-top: 2em;*/
+    padding-top: unset;
+    padding-left: unset;
+    padding-right: unset;
+  }
+  .row.single-top-padding.triple-bottom-padding.single-h-padding.limit-width.row-parent {
+    /*padding-top: unset;*/
+}
+.row.triple-top-padding.triple-bottom-padding.single-h-padding.limit-width.row-parent {
+    padding-top: 1em;
+}
+
+  .empty-space.empty-quad {
+    padding: 3.5em;
+  }
+  .empty-space.empty-single {
+    padding: unset;
+  }
+  /*Homepage: Areas of Expertise*/
+  .heading-text.el-text  {
+    padding-bottom: 3em;
+  }
+  .heading-text.el-text.main-text {
+    padding-bottom: unset;
+  }
+
+  /* ------------------------------------------------------------------- DH: Fonts Mobile*/
+
+  /*page heading*/
+  .heading-text.el-text.main-text span {
+    /*font-size: 1em!important;*/
+    /*font-size: .9em!important;
+    color: red;*/
+  }
+  /*section heading*/
+  .heading-text.el-text h2 {
+    /*font-size: 1em;*/
+    font-size: 1.5em;
+    /*color: green;*/
+  }
+  /*post heading*/
+  .post {
+      /*font-size: 1.4em!important;*/
+      /*color:orange;*/
+  }
+  /*uncode "Heading" block Heading text area*/
+  .rd-heading-text span {
+    font-size: 1.3em!important;
+  }
+  /*uncode "Heading" block Subheading area*/
+  .rd-heading p {
+    /*color: lightblue;*/
+  }
+  .rd-icon-box a {
+    /*color: lightblue!important;*/
+  }
+  .rd-icon-box p {
+    /*color: blue!important;*/
+  }
+  /* ------------------------------------------------------------------- DH: UNCODE Classes */
+  /*Uncode "Heading" text*/
+  .main-text span {
+    font-size: .9em!important;
+    /*color: red;*/
+  }
+  .heading-text span {
+    font-size: 1em;
+    /*color: red;*/
+  }
+  .heading-text p {
+    font-size: 1em;
+    /*color: blue;*/
+  }
+  /*Uncode "Icon Box"*/
+  .icon-box-heading a {
+    font-size: 1em;
+    /*color: red;*/
+  }
+  .icon-box-content {
+    font-size: 1em;
+    /*color: blue;*/
+  }
+  /*Uncode "Heading" text*/
+  .heading-text.el-text span {
+      /*font-size: 1.4em;*/
+  }
+
+
 }
 
 @media only screen and (max-width: 700px) {
@@ -941,24 +1052,36 @@ footer .icon-box.icon-inline {
 /*}*/
 
 /*Sidebar Accordian END*/
-
-/*Search Menu X START */
+/* ------------------------------------------------------------------- RND: Modal: Search */
+/*Close "X" position*/
 .menu-close-search {
 	top: 250px!important;
 	left: -250px!important;
 }
+
+/* ------------------------------------------------------------------- RND: Modal: Video Lightbox */
+/*Close "X" position*/
 .ilightbox-toolbar {
      visibility: hidden;
 }
-/*Search Menu X END */
 
-/*Calendar START*/
+
+/* ------------------------------------------------------------------- DH: Modal: Submit Claim */
+/*Calendar*/
 .pika-single {
     width: 260px;
 }
-/*Calendar End*/
+/* Changes width of incident date selector and the alignment of button */
+input#inf_custom_IncidentDate {
+    width: 100%;
+}
+/*form submit button*/
+.infusion-submit {
+    text-align: center;
+}
 
-/*Testimonials START*/
+
+/* ------------------------------------------------------------------- RND: Testimonials */
 .rd-testimonial-sidebar.textual-carousel .tmb .regular-text {
     padding: 0px !important;
     max-width: 1200px;
@@ -984,10 +1107,58 @@ footer .icon-box.icon-inline {
     /*border-left: none;*/
 }
 
+/* ------------------------------------------------------------------- DH: Author Info */
+/* ------------------------------------------------------------------- TEM: Author Info */
+.author-info {
+    display: none !important;
+}
+
+
 .rd-testimonial-sidebar.tmb-dark.tmb-color-overlay-text, .tmb-dark.tmb .t-entry-visual *, .tmb-dark.tmb .t-entry-visual a, .tmb-dark.tmb .t-entry-visual .t-entry-title a, .tmb-dark.tmb .t-entry-visual .t-entry-meta span {
     color: #777777;
 }
-/*Testimonials END*/
+
+/* ------------------------------------------------------------------- DH: Native WP Galleries */
+img.alignleft {
+    margin: .5em 1em .5em 0em;
+}
+
+.rd-intro img {
+    margin: .5em 2em 0em .5em;
+    display: block;
+    max-width: 100%;
+}
+
+.rd-intro .slideshow-window {
+    background-color: #fff0;
+    border: none;
+    border-radius: 0;
+    /* height: 0; */
+    margin-bottom: 20px;
+    overflow: hidden;
+    /* padding-top: 30px!important; */
+    /* padding-bottom: 56.25%!important; */
+    /* position: relative; */
+    /* z-index: 1; */
+}
+
+.rd-intro .slideshow-slide-caption {
+    font-size: 12px;
+    font-family: 'SF-Pro-Display', Roboto, sans-serif;
+    color: #00a7e1;
+    text-shadow: none;
+    line-height: unset;
+    height: unset;
+    /* position: unset; */
+    bottom: unset;
+    /* left: 0; */
+    /* z-index: 100; */
+    width: 100%;
+    text-align: right;
+    font-weight: 500!important;
+    font-style: italic;
+    padding-top: 1px;
+}
 
 /* NEW DARREN 20171115 */
 .row.unequal.no-top-padding.no-bottom-padding.no-h-padding.full-width.row-parent {
