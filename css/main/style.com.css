@@ -870,11 +870,7 @@ img.alignleft {
     padding: unset;
 }
 
-/*remove all default padding*/
-.row.double-top-padding.double-bottom-padding.no-h-padding.limit-width.row-parent,
-.row.full-width.row-parent {
-  padding: 1.5em;
-}
+
 
 .isotope-wrapper.isotope-inner-padding.half-gutter {
     padding-left: unset!important;
@@ -1130,7 +1126,41 @@ input, button, select, textarea {
 .row-container.row-navigation.row-navigation-light {
     display: none;
 }
+/* ------------------------------------------------------------------- RND: Desktop Padding */
 
+.row.full-width.row-parent {
+  padding: 1.5em;
+}
+/*Remove default top padding*/
+section.row-container {
+    padding: 2em;
+}
+.row.double-top-padding.double-bottom-padding.no-h-padding.limit-width.row-parent {
+    padding-top: unset;
+}
+.uncell.vc_custom_1511756249877.border-color-gyho-color.single-block-padding {
+  padding-top: unset;
+}
+.uncell.vc_custom_1508908481745.border-color-gyho-color.single-block-padding {
+    padding-top: unset;
+}
+.row.no-top-padding.no-bottom-padding.no-h-padding.full-width.row-parent {
+  padding-top: unset;
+}
+
+section.style-color-lxmt-bg.row-container {
+    /*padding-top: unset;*/
+}
+.row.row-parent.col-std-gutter.double-top-padding.no-bottom-padding.limit-width {
+    padding-top: 2em;
+}
+.rd-careers-padding.row-internal.row-container {
+    padding-top: unset;
+}
+/*logo padding*/
+.wpb_wrapper {
+    padding-top: 1em;
+}
 /* ------------------------------------------------------------------- RND: MOBILE */
 
 /* ALL Mobile, everything less than an ipad vertical*/
@@ -1287,7 +1317,10 @@ input, button, select, textarea {
     font-size: 1.5em;
   }
   .heading-text.el-text.main-text {
-    padding-bottom: unset;
+    padding: unset;
+  }
+  .heading-text.el-text.main-text span {
+    font-size: .8em!important;
   }
   .rd-heading-text span {
     font-size: 1.3em!important;
