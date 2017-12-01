@@ -1299,9 +1299,7 @@ section.style-color-lxmt-bg.row-container {
   .empty-space.empty-single {
     padding: unset;
   }
-  .main-text span {
-    font-size: .9em!important;
-  }
+
   .heading-text span {
     /*font-size: 1em;*/
     font-size: 1.2em;
@@ -1317,10 +1315,13 @@ section.style-color-lxmt-bg.row-container {
     font-size: 1.5em;
   }
   .heading-text.el-text.main-text {
-    padding: unset;
+    padding: unset!important;
+  }
+  .main-text span {
+    font-size: .8em!important;
   }
   .heading-text.el-text.main-text span {
-    font-size: .8em!important;
+    /*font-size: .8em!important;*/
   }
   .rd-heading-text span {
     font-size: 1.3em!important;
@@ -1336,6 +1337,9 @@ section.style-color-lxmt-bg.row-container {
   .modal-content {
     padding: 20px;
     width: 100%;
+  }
+  .modal {
+    padding-top: unset;
   }
   /* Image Size Adjustment in Mobile */
   .uncode-single-media .uncode-single-media-wrapper>.dummy~img, .uncode-single-media .uncode-single-media-wrapper>.dummy+* {
