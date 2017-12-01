@@ -431,7 +431,7 @@ TEAM MEMBER SINGLES
 MODAL: APPOINTMENT REQUEST
 *********************** RD ***
 
-/* ------------------------------------------------------------------- DH: Modal*/
+/* ------------------------------------------------------------------- RND: Modal*/
 
  /* The Modal (background) */
 .modal {
@@ -771,7 +771,7 @@ footer .icon-box.icon-inline {
      visibility: hidden;
 }
 
-/* ------------------------------------------------------------------- DH: Modal: Submit Claim */
+/* ------------------------------------------------------------------- RND: Modal: Submit Claim */
 /*Calendar*/
 .pika-single {
     width: 260px;
@@ -812,7 +812,7 @@ input#inf_custom_IncidentDate {
     /*border-left: none;*/
 }
 
-/* ------------------------------------------------------------------- DH RND: Author Info */
+/* ------------------------------------------------------------------- RND: Author Info */
 /* ------------------------------------------------------------------- TEM: Author Info */
 .author-info {
     display: none !important;
@@ -823,7 +823,7 @@ input#inf_custom_IncidentDate {
     color: #777777;
 }
 
-/* ------------------------------------------------------------------- DH: Native WP Galleries */
+/* ------------------------------------------------------------------- RND: Native WP Galleries */
 img.alignleft {
     margin: .5em 1em .5em 0em;
 }
@@ -1004,7 +1004,7 @@ input, button, select, textarea {
   padding-right: .5em;
 }
 
-/* ------------------------------------------------------------------- DH RND: CARD */
+/* ------------------------------------------------------------------- RND: CARD */
 /*Above  Title:*/
 .t-entry-type,
 .t-entry-date,
@@ -1037,7 +1037,7 @@ input, button, select, textarea {
 .t-entry-cf-detail-102771,
 .t-entry-cf-detail-166336 {}
 
-/* ------------------------------------------------------------------- DH RND: MINI CARD */
+/* ------------------------------------------------------------------- RND: MINI CARD */
 /*Above  Title:*/
 .t-entry-type,
 .t-entry-date,
@@ -1125,6 +1125,11 @@ input, button, select, textarea {
   text-align: right;
 }
 /*END mini-cards*/
+
+/*Hides Pagination in News & Events*/
+.row-container.row-navigation.row-navigation-light {
+    display: none;
+}
 
 /* ------------------------------------------------------------------- RND: MOBILE */
 
@@ -1242,12 +1247,12 @@ input, button, select, textarea {
   .uncont.no-block-padding.col-custom-width {
     padding-top: 2em!important;
   }
-  /* ------------------------------------------------------------------- DH: Pill Buttons Mobile */
+  /* ------------------------------------------------------------------- RND: Pill Buttons Mobile */
   a.custom-link.btn.border-width-0.btn-accent.btn-circle.btn-flat.btn-icon-left,
   .rd-inline-btn {
     width: 20em;
   }
-  /* ------------------------------------------------------------------- DH: Padding Mobile*/
+  /* ------------------------------------------------------------------- RND: Padding Mobile*/
   .row.double-top-padding.double-bottom-padding.double-h-padding.limit-width.row-parent.row-header {
     /*padding-top: 2em;*/
     /*padding-top: unset;
@@ -1294,7 +1299,7 @@ input, button, select, textarea {
     font-size: 1em;
   }
 
-  /* ------------------------------------------------------------------- DH: Modal Mobile*/
+  /* ------------------------------------------------------------------- RND: Modal Mobile*/
   .modal-content {
     padding: 20px;
     width: 100%;
