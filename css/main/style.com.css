@@ -110,7 +110,8 @@ H1, H2, H3, H4, H5, H6 {
 
 /* Text Style for Leading class beneath headings (leading = on) */
 
-.text-lead, .text-lead>* {
+.text-lead,
+.text-lead>* {
   font-size: 16px;
   line-height: 1.5em!important;
   margin: 3px 0px 0px 0px;
@@ -146,13 +147,7 @@ blockquote {
   border-left: none;
 }
 
-/* ========================================================================================== */
-
-/* ******************** RD ***
-FOOTER: DATE HIGHLIGHT
-*********************** RD ***
-/* Text Style for day of the week highlight in footer */
-
+/* ------------------------------------------------------------------- RND: FOOTER: DATE HIGHLIGHT */
 .today {
   color: #00a7e1!important;
   font-weight: 900!important;
@@ -160,8 +155,6 @@ FOOTER: DATE HIGHLIGHT
   text-transform: uppercase!important;
   /* padding-top: 0px!important; */
 }
-
-/* ========================================================================================== */
 
 /* ******************** RD ***
 TEAM MEMBER INDEX
@@ -438,8 +431,9 @@ TEAM MEMBER SINGLES
 MODAL: APPOINTMENT REQUEST
 *********************** RD ***
 
- /* The Modal (background) */
+/* ------------------------------------------------------------------- DH: Modal*/
 
+ /* The Modal (background) */
 .modal {
   display: none;
   /* Hidden by default */
@@ -596,162 +590,13 @@ MOBILE STYLES
 
 /************************ GLOBAL ***/
 
-/* Hide Excerpts in Carousels on Mobile*/
 
-@media only screen and (max-width: 700px) {
-  .t-entry-excerpt {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 700px) {
-  /* Image Size Adjustment in Mobile */
-  .uncode-single-media .uncode-single-media-wrapper>.dummy~img, .uncode-single-media .uncode-single-media-wrapper>.dummy+* {
-    position: absolute;
-    top: 122px;
-    bottom: 0;
-    left: 40px;
-    right: 0;
-    width: 79%;
-  }
-  /*Styles page titles on mobile*/
-  /*.rd-title h1 {
-    font-size: 22px;
-    font-size: 2.5em;
-    line-height: 1em;
-    color: greenyellow;
-  }*/
-  /*Styles subtitle on mobile*/
-  .rd-subtitle h2 {
-    /*color: #00a7e1;*/
-    /*font-style: italic;*/
-    font-size: 18px!important;
-    line-height: 1em;
-  }
-  /* Intro Text for Mobile */
-  .rd-intro p {
-    font-size: 15px;
-    line-height: 1.5em!important;
-    /*background: blueviolet;*/
-  }
-  /*Styles H2 on mobile*/
-  h2 {
-    font-size: 20px !important;
-  }
-  /*Text Lead beneath titles on mobile*/
-  .text-lead, .text-lead>* {
-    font-size: 14px;
-    line-height: 1.25em!important;
-    /*margin: 3px 0px 0px 0px;*/
-    /*font-weight: 500;*/
-    /*font-style: italic;*/
-  }
-  /*Styles paragraph text in mobile*/
-  p {
-    line-height: 1.5!important;
-    font-size: 14px;
-  }
-  /*Decreases top margin on lines beneath headers (<HR>) */
-  .divider-wrapper {
-    margin-top: 9px!important;
-  }
-  /*Sets standard for images laterally (left) on Post Card Stacks (like media appearances)*/
-  .tmb-content-size-4.tmb-content-lateral.tmb>.t-inside .t-entry-visual {
-    height: 125px !important;
-    /* This width makes it smaller with the new padding */
-    /*width: 31.333333% !important;*/
-  }
-  /* EFRAIN'S IFFYS >>>>>* /
-
-  /*Styles contact details box and sidebar details*/
-  /*p.rd-details-box {
-      text-align: -webkit-center !important;
-  }*/
-  /* Top Padding on Mobile */
-  /* From Past Template for Team Members */
-  /*.pos-top.pos-left.align_left.align_center_mobile.column_parent.col-lg-3.rd-team-member-left-column.col-md-25.col-sm-100.half-internal-gutter.z_index_1 {
-      margin-top: -115px;
-  }*/
-}
-
-/************************ LOCAL ***/
-
-@media only screen and (max-width: 700px) {
-  /* Bottom Padding on Mobile */
-  .rd-team-members-outer-column .uncell.vc_custom_1510285633252.border-color-gyho-color.single-block-padding {
-    padding-bottom: 100px;
-  }
-  /* Media Appearances Inner Column Top Padding on Mobile */
-  .pos-top.pos-center.align_left.column_child.col-lg-12.rd-internal-column-media-appearances.half-internal-gutter {
-    padding-top: 30px;
-  }
-  /* START Styling for Mobile (photo, info, header area) */
-  /* https://knottlab.dream.press/team/<employee-name>/ */
-  .rd-details-box span, .rd-details-box a {
-    font-size: 13px!important;
-  }
-  .rd-details-box {
-    margin: 0 0 0 0;
-    padding-top: 25px;
-  }
-  .row.col-half-gutter.limit-width.row-parent {
-    padding-left: 52px;
-  }
-  .row.double-top-padding.double-bottom-padding.no-h-padding.limit-width.row-parent {
-    padding-top: 0;
-  }
-  .pos-top.pos-center.align_left.column_parent.col-lg-9.col-sm-clear.double-internal-gutter.z_index_2 {
-    padding-top: 0;
-  }
-  .row.col-half-gutter.limit-width.row-parent {
-    padding-bottom: 20px;
-  }
-  .pos-top.pos-center.align_left.column_parent.col-lg-8.desktop-hidden.tablet-hidden.col-sm-66.half-internal-gutter {
-    padding: 10px;
-  }
-  /* END Styling for Mobile (photo, info, header area) */
-}
 
 /*==========================================================================================*/
 
 /*NEW CLASSES AND STYLES HERE*/
 
-@media only screen and (max-width: 666px) {
-  /* START Styling for Mobile (photo, info, header area) */
-  /* https://knottlab.dream.press/team/<employee-name>/ */
-  .rd-details-box span, .rd-details-box a {
-    font-size: 13px!important;
-  }
-  .rd-details-box {
-    margin: 0 0 0 0;
-    padding-top: 25px;
-  }
-  .row.col-half-gutter.limit-width.row-parent {
-    padding-left: 52px;
-  }
-  .row.double-top-padding.double-bottom-padding.no-h-padding.limit-width.row-parent {
-    padding-top: 0;
-  }
-  .pos-top.pos-center.align_left.column_parent.col-lg-9.col-sm-clear.double-internal-gutter.z_index_2 {
-    padding-top: 0;
-  }
-  .row.col-half-gutter.limit-width.row-parent {
-    padding-bottom: 20px;
-  }
-  .pos-top.pos-center.align_left.column_parent.col-lg-8.desktop-hidden.tablet-hidden.col-sm-66.half-internal-gutter {
-    padding: 10px;
-  }
-  /* END Styling for Mobile (photo, info, header area) */
-}
 
-@media only screen and (min-device-width: 667px) and (max-device-width: 768px) {
-  p.rd-details-box a {
-    font-size: 15px!important;
-  }
-  p.rd-details-box {
-    padding-top: 25px;
-  }
-}
 
 /*Decreases left padding on image*/
 
@@ -783,30 +628,7 @@ MOBILE STYLES
 
 /* CSS for Card Posts */
 
-@media only screen and (max-width: 700px) {
-  /* Text Size of Titles on Mobile */
-  .rd-index h3.t-entry-title.h4 {
-    font-size: 15px;
-    /*background: mediumpurple;*/
-  }
-  /* Padding Around Text in Card Posts */
-  .rd-index .t-entry-text-tc.single-block-padding {
-    /*padding: 1em;*/
-      /*background: mediumpurple;*/
-  }
-  /* Gutter Padding */
-  .half-gutter .tmb {
-    padding: 18px;
-  }
-  /* Outer Padding of Card Posts */
-  .half-block-padding {
-    padding: 1em;
-  }
-  /* Padding Underneath Details */
-  .tmb .t-entry-text-tc:not(.no-block-padding) .t-entry>*:first-child {
-    margin: 0px 0px .25em 0px!important;
-  }
-}
+
 
 /* Sidebar Accordian START */
 /* ------------------------------------------------------------------- RND: SIDEBAR */
@@ -887,25 +709,31 @@ display:none;
 }
 
 
-/* ------------------------------------------------------------------- RND: Footer Styles */
-
+/* ------------------------------------------------------------------- RND: FOOTER */
 /*CHANGED: NEW CSS (11/26) */
 
 /*Remove padding from widget areas*/
-
 footer .widget-container {
   margin: 0px 0px .5em 0px;
 }
 
 /*Remove padding from unordered lists*/
-
 .widget-container ul li {
   padding: 0px 0px 0px 0px;
 }
 
 /*Synchronizes text sizes in footer*/
-
-.site-footer a, .site-footer p, .site-footer li, .site-footer dt, .site-footer dd, .site-footer dl, .site-footer address, .site-footer label, .site-footer small, .site-footer pre, .site-footer code, .site-footer .widget-container.widget_nav_menu li a {
+.site-footer a,
+.site-footer p,
+.site-footer li,
+.site-footer dt,
+.site-footer dd,
+.site-footer dl,
+.site-footer address,
+.site-footer label,
+.site-footer small,
+.site-footer pre,
+.site-footer code, .site-footer .widget-container.widget_nav_menu li a {
   font-size: 14px;
 }
 
@@ -919,9 +747,6 @@ footer .widget-container {
   line-height: 1.75;
   font-weight: 500;
 }
-
-/*Footer Icons*/
-
 footer .icon-box.icon-inline {
   display: inline-table;
   table-layout: fixed;
@@ -933,32 +758,35 @@ footer .icon-box.icon-inline {
   padding-right: 1em;
 }
 
-/*Copyright area*/
-
-/*footer .footer-last .uncell>*:first-child {*/
-/*  margin-top: 0;*/
-/*  margin-bottom: 1.75em;*/
-/*}*/
-
-/*Sidebar Accordian END*/
-
-/*Search Menu X START */
+/* ------------------------------------------------------------------- RND: Modal: Search */
+/*Close "X" position*/
 .menu-close-search {
 	top: 250px!important;
 	left: -250px!important;
 }
+
+/* ------------------------------------------------------------------- RND: Modal: Video Lightbox */
+/*Close "X" position*/
 .ilightbox-toolbar {
      visibility: hidden;
 }
-/*Search Menu X END */
 
-/*Calendar START*/
+/* ------------------------------------------------------------------- DH: Modal: Submit Claim */
+/*Calendar*/
 .pika-single {
     width: 260px;
 }
-/*Calendar End*/
+/* Changes width of incident date selector and the alignment of button */
+input#inf_custom_IncidentDate {
+    width: 100%;
+}
+/*form submit button*/
+.infusion-submit {
+    text-align: center;
+}
 
-/*Testimonials START*/
+
+/* ------------------------------------------------------------------- RND: Testimonials */
 .rd-testimonial-sidebar.textual-carousel .tmb .regular-text {
     padding: 0px !important;
     max-width: 1200px;
@@ -984,10 +812,58 @@ footer .icon-box.icon-inline {
     /*border-left: none;*/
 }
 
+/* ------------------------------------------------------------------- DH RND: Author Info */
+/* ------------------------------------------------------------------- TEM: Author Info */
+.author-info {
+    display: none !important;
+}
+
+
 .rd-testimonial-sidebar.tmb-dark.tmb-color-overlay-text, .tmb-dark.tmb .t-entry-visual *, .tmb-dark.tmb .t-entry-visual a, .tmb-dark.tmb .t-entry-visual .t-entry-title a, .tmb-dark.tmb .t-entry-visual .t-entry-meta span {
     color: #777777;
 }
-/*Testimonials END*/
+
+/* ------------------------------------------------------------------- DH: Native WP Galleries */
+img.alignleft {
+    margin: .5em 1em .5em 0em;
+}
+
+.rd-intro img {
+    margin: .5em 2em 0em .5em;
+    display: block;
+    max-width: 100%;
+}
+
+.rd-intro .slideshow-window {
+    background-color: #fff0;
+    border: none;
+    border-radius: 0;
+    /* height: 0; */
+    margin-bottom: 20px;
+    overflow: hidden;
+    /* padding-top: 30px!important; */
+    /* padding-bottom: 56.25%!important; */
+    /* position: relative; */
+    /* z-index: 1; */
+}
+
+.rd-intro .slideshow-slide-caption {
+    font-size: 12px;
+    font-family: 'SF-Pro-Display', Roboto, sans-serif;
+    color: #00a7e1;
+    text-shadow: none;
+    line-height: unset;
+    height: unset;
+    /* position: unset; */
+    bottom: unset;
+    /* left: 0; */
+    /* z-index: 100; */
+    width: 100%;
+    text-align: right;
+    font-weight: 500!important;
+    font-style: italic;
+    padding-top: 1px;
+}
 
 /* NEW DARREN 20171115 */
 .row.unequal.no-top-padding.no-bottom-padding.no-h-padding.full-width.row-parent {
@@ -1012,94 +888,21 @@ footer .icon-box.icon-inline {
 .t-entry-text-tc.single-block-padding {
   padding: 10px 15px;
 }
-
-/*START mini-cards*/
-
-.t-inside {
-  /*padding:unset;*/
-}
-.t-entry-type {
-  /*background: yellow;*/
-}
-
-.t-entry-text {
-  /*background: white;*/
-  /*padding-right: 1.2em;*/
-
-}
-.t-entry {
-    padding: .5em 2em;
-}
-.t-entry a {
-  /*background: blue;*/
-  font-size: 1em;
-}
-
-.t-entry-title {
-  /*background: brown;*/
-}
-
-.t-entry-cf-detail-521378,
-.t-entry-cf-detail-155643,
-.t-entry-cf-detail-153464 {
-  /*background: red;*/
-}
-
-/*phone number*/
-
-.t-entry-cf-detail-110456 {
-  /*background: green;*/
-  display: inline;
-  font-size: .9em;
-}
-
-/*email address*/
-
-.t-entry-cf-detail-142935 {
-  /*background: orange;*/
-  display: inline;
-  font-size: .9em;
-  /*float:right;*/
-  text-align: right;
-}
-
-/*END mini-cards*/
-
 /*START team-member-contact-box info area*/
 .rd-details-box {
   padding: unset;
-  /*background: olive;*/
 }
 .rd-detail-container {
   padding: unset;
 }
 .rd-detail-value {
   font-size: .5em;
-  /*background: white;*/
 }
 
-span.rd-detail-value  {
-  /*font-size: .9em;*/
-  /*background: red;*/
-}
 .rd-detail-label {
   font-size: .5em;
-  /*background: white;*/
 }
 /*END team-member-contact-box info area*/
-
-/*TODO: add .rd-container this to master template*/
-
-.rd-container {
-  /*background: brown;*/
-}
-
-.main-text {
-}
-
-.heading-text {
-  /*background:lightblue;*/
-}
 
 .rd-title span {
   /*background: greenyellow;*/
@@ -1117,121 +920,69 @@ span.rd-detail-value  {
   /*background: lightblue;*/
 }
 
-.text-lead {
-  /*background: lightgreen;*/
-}
 /*affiliations url link*/
 .t-entry-cf-detail-102771 {
   font-size: 2.5em!important;
-  /*background: mistyrose;*/
 }
 
-.rd-subtitle {
-  /*background: blue;*/
+/* ------------------------------------------------------------------- RND LIGHTBOX STYLE START*/
+
+/*Lightbox overlay color*/
+.ilightbox-overlay.black {
+    /*background: #1f243f;*/
+    background: -webkit-linear-gradient(bottom , #00356b 16% , #1f243f 85%);
+
 }
 
-.t-entry-excerpt {
-  /*background: lightgreen;*/
-  /*display:none;*/
+/*Styles title text in lightbox*/
+.ilightbox-holder.black .ilightbox-inner-toolbar .ilightbox-title {
+    /*font-size: 16px;*/
+    padding: 1em 1em;
+    text-align: left;
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
 }
 
-.rd-intro {
-  /*background: blueviolet;*/
+/* ------------------------------------------------------------------- RND PRIMARY/SECONDARY MENU */
+
+/*Primary Menu: Button style*/
+.rd-btn.btn-accent.btn-circle.btn-flat.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-67437.menu-btn-container.btn {
+  font-size: 12px;
+  font-weight: 800 !important;
+  font-family: 'SF-Pro-Display', Roboto, Sans-Serif !important;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-top: .5em;
+  margin-bottom: .5em;
 }
 
-.rd-subheading {
-  /*background: yellow;*/
+/*Secondary Menu: Text Style*/
+.menu-mini.menu-smart a {
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 800 !important;
+  font-family: 'SF-Pro-Display', Roboto, Sans-Serif !important;
+  letter-spacing: 0.01em;
+  margin-top: .5em;
+  margin-bottom: .5em;
 }
 
-.rd-section-heading {
-  /*background: orange;*/
+/*Text Style for search bar in overlay*/
+input, button, select, textarea {
+  /*font-family: inherit;*/
+  font-size: inherit;
+  line-height: inherit;
+  /*font-weight: 800!important;*/
+  font-weight: 600!important;
+  font-family: 'SF-Pro-Display', Roboto, Sans-Serif !important;
+  letter-spacing: .01em;
+  text-transform: normal;
 }
-
-.rd-page-lead {
-  /*background: purple;*/
-}
-
-.rd-column {
-  /*background: grey;*/
-}
-
-/* ------------------------------------------------------------------- [RD] LIGHTBOX STYLE START*/
-
-    /*Lightbox overlay color*/
-    .ilightbox-overlay.black {
-        /*background: #1f243f;*/
-        background: -webkit-linear-gradient(bottom , #00356b 16% , #1f243f 85%);
-
-    }
-
-    /*Styles title text in lightbox*/
-    .ilightbox-holder.black .ilightbox-inner-toolbar .ilightbox-title {
-        /*font-size: 16px;*/
-        padding: 1em 1em;
-        text-align: left;
-        color: #fff;
-        font-weight: 600;
-        font-size: 18px;
-    }
-
-/* ------------------------------------------------------------------- [RD] PRIMARY/SECONDARY MENU */
-
-    /*Primary Menu: Button style*/
-    .rd-btn.btn-accent.btn-circle.btn-flat.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-67437.menu-btn-container.btn {
-        font-size: 12px;
-        font-weight: 800 !important;
-        font-family: 'SF-Pro-Display', Roboto, Sans-Serif !important;
-        letter-spacing: 0.05em;
-        text-transform: uppercase;
-        margin-top: .5em;
-        margin-bottom: .5em;
-    }
-
-    /*Secondary Menu: Text Style*/
-    .menu-mini.menu-smart a {
-        text-transform: uppercase;
-        font-size: 11px;
-        font-weight: 800 !important;
-        font-family: 'SF-Pro-Display', Roboto, Sans-Serif !important;
-        letter-spacing: 0.01em;
-        margin-top: .5em;
-        margin-bottom: .5em;
-    }
-
-    /*Text Style for search bar in overlay*/
-    input, button, select, textarea {
-        /*font-family: inherit;*/
-        font-size: inherit;
-        line-height: inherit;
-        /*font-weight: 800!important;*/
-        font-weight: 600!important;
-        font-family: 'SF-Pro-Display', Roboto, Sans-Serif !important;
-        letter-spacing: .01em;
-        text-transform: normal;
-    }
-
 
 /*Background for search bar*/
-@media (min-width: 960px){
-    .overlay.overlay-search .search-container {
-        display: table-cell;
-        vertical-align: middle;
-        width: 100%;
-        font-size: 28px;
-        font-size: 3.5vh;
-        background: -webkit-linear-gradient(bottom , #00356b 16% , #1f243f 85%);
-        opacity: 0.94;
-    }
-
-    .overlay.open {
-        opacity: 0.94;
-    }
-}
-
-/* ------------------------------------------------------------------- [RD] LIGHTBOX STYLE END */
-
+/* ------------------------------------------------------------------- RND LIGHTBOX STYLE END */
 /* ----------- RD Buttons ----------- */
-
 .rd-btn.btn-accent.btn-circle.btn-flat.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-67437.menu-btn-container.btn {
   font-size: 12px;
   font-weight: 900 !important;
@@ -1240,33 +991,87 @@ span.rd-detail-value  {
   text-transform: uppercase;
   margin-top: .5em;
   margin-bottom: .5em;
-  /*background: yellow;*/
 }
-
-/* CARDS START */
 .rd-index .t-entry {
   padding: 2em;
 }
 .rd-index span {
-  /*background:lightblue;*/
   font-size: 1.1em;
 }
 .rd-index .rd-detail-container .rd-detail-label {
-  /*background: mistyrose;*/
   display: table-cell;
   font-size: 1.2em;
   padding-right: .5em;
 }
-.rd-index .t-entry-cf-detail-521378 {
-  /*background: yellow;*/
+
+/* ------------------------------------------------------------------- DH RND: CARD */
+/*Above  Title:*/
+.t-entry-type,
+.t-entry-date,
+.t-entry-cf-detail-699204,
+.t-entry-cf-detail-183492,
+.t-entry-cf-detail-153464,
+.t-entry-cf-detail-942901,
+.t-entry-cf-detail-155643 {
+  color: #00a7e1;
+  font-weight: 500;
 }
-.rd-index .t-entry-title {
-  /*background: greenyellow;*/
+/*Title:*/
+.t-entry-title {}
+
+/*Below Title:*/
+.t-entry-cf-detail-521378,
+.t-entry-cf-detail-124415,
+.t-entry-cf-detail-284801 {
+  font-weight: 500;
+  color: #777;
+  font-style: italic;
 }
-.rd-index p {
-  /*background: coral;*/
+/*Excerpt:*/
+.t-entry-excerpt {}
+
+/*Below Excerpt:*/
+.t-entry-cf-detail-142935,
+.t-entry-cf-detail-110456,
+.t-entry-cf-detail-146640,
+.t-entry-cf-detail-102771,
+.t-entry-cf-detail-166336 {}
+
+/* ------------------------------------------------------------------- DH RND: MINI CARD */
+/*Above  Title:*/
+.t-entry-type,
+.t-entry-date,
+.t-entry-cf-detail-699204,
+.t-entry-cf-detail-183492,
+.t-entry-cf-detail-153464,
+.t-entry-cf-detail-942901,
+.t-entry-cf-detail-155643 {
+  color: #00a7e1;
+  font-weight: 500;
 }
-/* CARDS END */
+
+/*Title:*/
+.t-entry-title {}
+
+/*Below Title:*/
+.t-entry-cf-detail-521378,
+.t-entry-cf-detail-124415,
+.t-entry-cf-detail-284801 {
+  font-weight: 500;
+  color: #777;
+  font-style: italic;
+}
+
+/*Excerpt:*/
+.t-entry-excerpt {}
+
+/*Below Excerpt:*/
+.t-entry-cf-detail-166336 {}
+
+/*Display: None*/
+.t-entry-cf-detail-102771 {}
+.t-entry-excerpt {}
+
 
  /* MINI CARDS START */
  .t-entry-text-tc {
@@ -1298,23 +1103,52 @@ span.rd-detail-value  {
 }
 /* MINI CARDS END */
 
-/*VC RD_Mobile*/
+/*START mini-cards*/
+.t-entry {
+    padding: 2em 2em 1em 2em;
+}
+.t-entry a {
+  /*background: blue;*/
+  font-size: 1em;
+}
 
-@media only screen and (max-width: 569px) {
+/*phone number*/
+.t-entry-cf-detail-110456 {
+  display: inline;
+  font-size: .9em;
+}
+
+/*email address*/
+.t-entry-cf-detail-142935 {
+  display: inline;
+  font-size: .9em;
+  text-align: right;
+}
+/*END mini-cards*/
+
+/* ------------------------------------------------------------------- RND: MOBILE */
+
+/* ALL Mobile, everything less than an ipad vertical*/
+@media only screen and (max-width: 767px) {
+  p {
+    line-height: 1.5!important;
+    font-size: 14px;
+  }
+  h2 {
+    font-size: 20px !important;
+  }
   /*remove all default padding*/
   .border-color-gyho-color.single-block-padding {
     padding: unset;
   }
   .pos-top.pos-center.align_left.column_parent.col-lg-8.desktop-hidden.tablet-hidden.col-sm-66.half-internal-gutter {
-    padding: unset;
+    /*padding: unset;*/
+    padding: 10px;
   }
   /*padding on case cards*/
   .t-entry-text-tc.single-block-padding {
     padding: 10px 10px;
   }
-  /*.row.full-width.row-parent {
-    padding-top: 40px;
-  }*/
   .row-container.onepage-section {
     padding-top: 50px;
   }
@@ -1327,12 +1161,6 @@ span.rd-detail-value  {
   }
   .t-side {
     padding: unset;
-  }
-
-  /* padding on cards */
-  .rd-index .t-entry {
-    padding: 1em;
-    /*background: deeppink;*/
   }
   .t-entry a {
     /*background: blue;*/
@@ -1359,10 +1187,7 @@ span.rd-detail-value  {
   }
 
   /*START team-member-contact-box info area*/
-  .rd-details-box {
-    padding: unset;
-    /*background: olive;*/
-  }
+
   .rd-detail-container {
     padding: unset;
   }
@@ -1379,9 +1204,7 @@ span.rd-detail-value  {
   .row.no-top-padding.no-bottom-padding.no-h-padding.full-width.row-parent {
     padding: unset;
   }
-  .t-entry-excerpt {
-    display: none;
-  }
+
   .rd-title span {
     /*background: greenyellow;*/
     font-size: .8em;
@@ -1393,9 +1216,7 @@ span.rd-detail-value  {
   .rd-subtile {
     /*background: blue;*/
   }
-  .rd-intro {
-    /*background: blueviolet;*/
-  }
+
   .rd-subheading {
     /*background: yellow;*/
   }
@@ -1405,174 +1226,268 @@ span.rd-detail-value  {
   .rd-page-lead {
     /*background: purple;*/
   }
-}
+  /* START Styling for Mobile (photo, info, header area) */
+  /* https://knottlab.dream.press/team/<employee-name>/ */
 
-/* ----------- Non-Retina Screens ----------- */
-
-@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {}
-
-/* ----------- Retina Screens ----------- */
-
-@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {}
-
-/* ----------- iPad 3, 4 and Pro 9.7" ----------- */
-
-/* Portrait and Landscape */
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
-  /*remove all default padding*/
-  .border-color-gyho-color.single-block-padding {
-    padding: unset;
-    padding-left: 2.3em;
+  .row.col-half-gutter.limit-width.row-parent {
+    padding-left: 52px;
+    padding-bottom: 20px;
   }
-  .row.full-width.row-parent {
-    padding-top: 40px;
+  .pos-top.pos-center.align_left.column_parent.col-lg-9.col-sm-clear.double-internal-gutter.z_index_2 {
+    padding-top: 0;
   }
-  .rd-container {
-    /*background: brown;*/
-    /*padding: 1em;*/
-  }
-  /*START mini-cards*/
-  .t-inside {
-    /*padding:unset;*/
-  }
-  .t-entry a {
-    /*background: blue;*/
-    font-size: .9em;
-  }
-  .t-entry-title {
-    /*background: brown;*/
-  }
-  .t-entry-cf-detail-521378,
-  .t-entry-cf-detail-155643,
-  .t-entry-cf-detail-153464 {
-    /*background: red;*/
-    font-size: .8em;
-  }
-  /*phone number*/
-  .t-entry-cf-detail-110456 {
-    /*background: green;*/
-    display: inline;
-    font-size: .8em;
-  }
-  /*email address*/
-  .t-entry-cf-detail-142935 {
-    /*background: orange;*/
-    display: inline;
-    font-size: .8em;
-    /*float:right;*/
-    text-align: right;
-  }
-  /*END mini-cards*/
-  /*START team-member-contact-box info area*/
-  .rd-details-box {
-    padding: unset;
-    /*background: olive;*/
-  }
-  .rd-detail-container {
-    padding: unset;
-  }
-  .rd-detail-value {
-    font-size: .5em;
-    /*background: white;*/
-  }
-  .rd-detail-label {
-    font-size: .5em;
-    /*background: white;*/
-  }
-  /*END team-member-contact-box info area*/
   .t-entry-excerpt {
-    /*display: none;*/
+    display: none;
   }
-  .rd-title span {
-    /*background: greenyellow;*/
+  .uncont.no-block-padding.col-custom-width {
+    padding-top: 2em!important;
+  }
+  /* ------------------------------------------------------------------- DH: Pill Buttons Mobile */
+  a.custom-link.btn.border-width-0.btn-accent.btn-circle.btn-flat.btn-icon-left,
+  .rd-inline-btn {
+    width: 20em;
+  }
+  /* ------------------------------------------------------------------- DH: Padding Mobile*/
+  .row.double-top-padding.double-bottom-padding.double-h-padding.limit-width.row-parent.row-header {
+    /*padding-top: 2em;*/
+    /*padding-top: unset;
+    padding-left: unset;
+    padding-right: unset;*/
+  }
+  .row.triple-top-padding.triple-bottom-padding.single-h-padding.limit-width.row-parent {
+      padding-top: 1em;
+  }
+
+  .empty-space.empty-quad {
+    padding: 3.5em;
+  }
+  .empty-space.empty-single {
+    padding: unset;
+  }
+  .main-text span {
+    font-size: .9em!important;
+  }
+  .heading-text span {
+    /*font-size: 1em;*/
     font-size: 1.2em;
   }
-  .employee-job-title span {
-    /*background: coral;*/
-    font-size: 1.1em;
+  .heading-text p {
+    font-size: 1em;
   }
-  .rd-subtile {
-    /*background: blue;*/
+  .heading-text.el-text  {
+    padding-bottom: 3em;
   }
-  .rd-intro {
-    /*background: blueviolet;*/
+  .heading-text.el-text h2 {
+    /*font-size: 1em;*/
+    font-size: 1.5em;
   }
-  .rd-subheading {
-    /*background: yellow;*/
+  .heading-text.el-text.main-text {
+    padding-bottom: unset;
   }
-  .rd-section-heading {
-    /*background: orange;*/
+  .rd-heading-text span {
+    font-size: 1.3em!important;
   }
-  .rd-page-lead {
-    /*background: purple;*/
+  .icon-box-heading a {
+    font-size: 1em;
   }
-}
+  .icon-box-content {
+    font-size: 1em;
+  }
 
-/* Portrait */
-@media only screen
-and (min-device-width: 768px)
-and (max-device-width: 1024px)
-and (orientation: portrait)
-and (-webkit-min-device-pixel-ratio: 2) {
-  /*remove all default padding*/
-  .border-color-gyho-color.single-block-padding {
+  /* ------------------------------------------------------------------- DH: Modal Mobile*/
+  .modal-content {
+    padding: 20px;
+    width: 100%;
+  }
+  /* Image Size Adjustment in Mobile */
+  .uncode-single-media .uncode-single-media-wrapper>.dummy~img, .uncode-single-media .uncode-single-media-wrapper>.dummy+* {
+    position: absolute;
+    top: 122px;
+    bottom: 0;
+    left: 40px;
+    right: 0;
+    width: 79%;
+  }
+  /*.rd-title h1 {
+    font-size: 22px;
+    font-size: 2.5em;
+    line-height: 1em;
+    color: greenyellow;
+  }*/
+  .rd-subtitle h2 {
+    /*color: #00a7e1;*/
+    /*font-style: italic;*/
+    font-size: 18px!important;
+    line-height: 1em;
+  }
+  .rd-intro p {
+    font-size: 15px;
+    line-height: 1.5em!important;
+  }
+
+  .text-lead,
+  .text-lead>* {
+    font-size: 14px;
+    line-height: 1.25em!important;
+    /*margin: 3px 0px 0px 0px;*/
+    /*font-weight: 500;*/
+    /*font-style: italic;*/
+  }
+  /*Decreases top margin on lines beneath headers (<HR>) */
+  .divider-wrapper {
+    margin-top: 9px!important;
+  }
+  /*Sets standard for images laterally (left) on Post Card Stacks (like media appearances)*/
+  .tmb-content-size-4.tmb-content-lateral.tmb>.t-inside .t-entry-visual {
+    height: 125px !important;
+    /* This width makes it smaller with the new padding */
+    /*width: 31.333333% !important;*/
+  }
+  /* Bottom Padding on Mobile */
+  .rd-team-members-outer-column .uncell.vc_custom_1510285633252.border-color-gyho-color.single-block-padding {
+    padding-bottom: 100px;
+  }
+  /* Media Appearances Inner Column Top Padding on Mobile */
+  .pos-top.pos-center.align_left.column_child.col-lg-12.rd-internal-column-media-appearances.half-internal-gutter {
+    padding-top: 30px;
+  }
+  /* START Styling for Mobile (photo, info, header area) */
+  /* https://knottlab.dream.press/team/<employee-name>/ */
+  .rd-details-box span,
+  .rd-details-box a {
+    font-size: 13px!important;
+  }
+  .rd-details-box {
+    margin: 0 0 0 0;
+    padding-top: 25px;
+    /*padding: unset;*/
+  }
+  p.rd-details-box {
+    padding-top: 25px;
+  }
+  p.rd-details-box a {
+    font-size: 15px!important;
+  }
+  /* Text Size of Titles on Mobile */
+  .rd-index h3.t-entry-title.h4 {
+    font-size: 15px;
+    /*background: mediumpurple;*/
+  }
+  /* Padding Around Text in Card Posts */
+  .rd-index .t-entry-text-tc.single-block-padding {
+    /*padding: 1em;*/
+      /*background: mediumpurple;*/
+  }
+  /* padding on cards */
+  .rd-index .t-entry {
+    padding: 1em;
+    /*background: deeppink;*/
+  }
+  /* Gutter Padding */
+  .half-gutter .tmb {
+    /*padding: 10px;*/
+  }
+  /* Outer Padding of Card Posts */
+  .half-block-padding {
+    padding: 1em;
+  }
+  /* Padding Underneath Details */
+  .tmb .t-entry-text-tc:not(.no-block-padding) .t-entry>*:first-child {
+    margin: 0px 0px .25em 0px!important;
+  }
+  section.style-color-lxmt-bg.row-container {
+      /*padding: unset;*/
+  }
+  .t-inside.style-color-xsdn-bg.animate_when_almost_visible.bottom-t-top.start_animation {
+      width: 330px;
+  }
+  /* ------------------------------------------------------------------- RND: Mobile padding */
+  .pos-top.pos-center.align_left.column_parent.col-lg-9.double-internal-gutter.z_index_2 {
+    /*padding: 0 10px;*/
+  }
+  .row.double-top-padding.double-bottom-padding.no-h-padding.limit-width.row-parent {
+    padding: 2.0em;
+  }
+  .row-internal.row-container {
     padding: unset;
   }
+  .row.double-top-padding.double-bottom-padding.no-h-padding.limit-width.row-parent {
+    }
+ .rd-careers-padding {
+   padding: .5em;
+  }
+  .row-container {
+    padding: unset!important;
+  }
+  span.rd-detail-value {
+    font-size: .5em;
+  }
+  /*top padding for mini cards*/
+  .tmb.tmb-iso-w6.tmb-iso-h4.tmb-round.tmb-light.tmb-content-lateral-left.tmb-content-vertical-top.tmb-content-size-3.tmb-content-left.tmb-text-space-reduced.tmb-shadowed.tmb-media-shadowed-xs.tmb-bordered.tmb-id-65485.tmb-img-ratio.tmb-content-lateral {
+    padding: 2px!important;
+  }
+  /*top padding for cards*/
+  .tmb.tmb-iso-w6.tmb-iso-h4.tmb-round.tmb-light.tmb-overlay-text-anim.tmb-overlay-anim.tmb-content-lateral-left.tmb-content-vertical-top.tmb-content-size-3.tmb-content-left.tmb-image-anim.tmb-shadowed.tmb-media-shadowed-xs.tmb-bordered.grid-cat-112.grid-cat-114.tmb-id-65532.tmb-img-ratio.tmb-content-lateral {
+    padding: 2px 10px;
+ }
+ .pos-top.pos-center.align_left.column_parent.col-lg-9.double-internal-gutter.z_index_2 {
+    padding-left: .3em;
+  }
 }
 
-/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
-
-/* Portrait and Landscape */
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {}
-
-/* Portrait */
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {}
-
-/* Landscape */
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {}
-
-/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
-
-/* Portrait and Landscape */
-
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {}
-
-/* Portrait */
-
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {}
-
-/* Landscape */
-
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {}
-
-/* ----------- iPhone 6+, 7+ and 8+ ----------- */
-
-/* Portrait and Landscape */
-
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {}
-
-/* Portrait */
-
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {}
-
-/* Landscape */
-
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {}
-
-/* ----------- iPhone X ----------- */
-
-/* Portrait and Landscape */
-
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {}
-
-/* Portrait */
-
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {}
-
-/* Landscape */
-
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {}
+/* ------------------------------------------------------------------- RND: TABLET */
+/* ipad vertical only (768 x 1024) */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .modal-content {
+      padding: 40px;
+  }
+  .modal-content {
+      width: 90%;
+  }
+  .t-entry {
+      padding: 1.3em 2em .5em 2em;
+  }
+  .overlay.overlay-search .search-container {
+      display: table-cell;
+      vertical-align: middle;
+      width: 100%;
+      font-size: 28px;
+      font-size: 3.5vh;
+      background: -webkit-linear-gradient(bottom , #00356b 16% , #1f243f 85%);
+      opacity: 0.94;
+  }
+  .overlay.open {
+      opacity: 0.94;
+  }
+  .row.no-top-padding.no-bottom-padding.no-h-padding.full-width.row-parent {
+      padding: unset;
+  }
+  section.style-color-lxmt-bg.row-container {
+      padding: unset;
+  }
+  .uncell.vc_custom_1508908481745.border-color-gyho-color.single-block-padding {
+      padding: unset;
+  }
+  .row-internal.row-container {
+      padding-top: 0;
+  }
+  element.style {
+      left: 0px;
+      top: 0px;
+  }
+  .row.double-top-padding.double-bottom-padding.no-h-padding.limit-width.row-parent {
+    padding: 2em;
+  }
+  .tmb.tmb-iso-w12.tmb-iso-h4.tmb-round.tmb-light.tmb-overlay-text-anim.tmb-overlay-anim.tmb-content-lateral-left.tmb-content-vertical-top.tmb-content-size-3.tmb-content-left.tmb-image-anim.tmb-shadowed.tmb-media-shadowed-xs.tmb-bordered.tmb-id-65485.tmb-img-ratio.tmb-content-lateral {
+    width: 725px!important;
+  }
+}
+/* ------------------------------------------------------------------- RND: TABLET & RESPONSIVE */
+/* ipad + */
+@media only screen and (min-width: 768px) and (max-width: 1175px) {
+  /*email address move on wrap to new line*/
+  .t-entry-cf-detail-142935 {
+    position: relative;
+    left: -8px;
+  }
+}
