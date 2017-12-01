@@ -1,0 +1,553 @@
+/*Originals*/
+@media only screen and (max-width: 569px) {
+  /*remove all default padding*/
+  .border-color-gyho-color.single-block-padding {
+    padding: unset;
+  }
+  .pos-top.pos-center.align_left.column_parent.col-lg-8.desktop-hidden.tablet-hidden.col-sm-66.half-internal-gutter {
+    padding: unset;
+  }
+  /*padding on case cards*/
+  .t-entry-text-tc.single-block-padding {
+    padding: 10px 10px;
+  }
+  /*.row.full-width.row-parent {
+    padding-top: 40px;
+  }*/
+  .row-container.onepage-section {
+    padding-top: 50px;
+  }
+  .t-inside {
+    /*background: deeppink;*/
+    left: -10px;
+    position: absolute;
+    top: 0px!important;
+    width: 296px;
+  }
+  .t-side {
+    padding: unset;
+  }
+
+  /* padding on cards */
+  .rd-index .t-entry {
+    padding: 1em;
+    /*background: deeppink;*/
+  }
+  .t-entry a {
+    /*background: blue;*/
+    font-size: .9em;
+  }
+  .t-entry-cf-detail-521378,
+  .t-entry-cf-detail-155643,
+  .t-entry-cf-detail-153464 {
+    /*background: red;*/
+    font-size: .8em;
+  }
+  /*phone number*/
+  .t-entry-cf-detail-110456 {
+    /*background: green;*/
+    display: inline;
+    font-size: .6em;
+  }
+  /*email address*/
+  .t-entry-cf-detail-142935 {
+    /*background: orange;*/
+    display: inline;
+    font-size: .6em;
+    text-align: right;
+  }
+
+  /*START team-member-contact-box info area*/
+  .rd-details-box {
+    padding: unset;
+    /*background: olive;*/
+  }
+  .rd-detail-container {
+    padding: unset;
+  }
+  .rd-detail-value {
+    font-size: .5em;
+    /*background: white;*/
+  }
+  .rd-detail-label {
+    font-size: .5em;
+    /*background: white;*/
+  }
+  /*END team-member-contact-box info area*/
+
+  .row.no-top-padding.no-bottom-padding.no-h-padding.full-width.row-parent {
+    padding: unset;
+  }
+  .t-entry-excerpt {
+    display: none;
+  }
+  .rd-title span {
+    /*background: greenyellow;*/
+    font-size: .8em;
+  }
+  .employee-job-title span {
+    /*background: coral;*/
+    font-size: 1.1em;
+  }
+  .rd-subtile {
+    /*background: blue;*/
+  }
+  .rd-intro {
+    /*background: blueviolet;*/
+  }
+  .rd-subheading {
+    /*background: yellow;*/
+  }
+  .rd-section-heading {
+    /*background: lightblue;*/
+  }
+  .rd-page-lead {
+    /*background: purple;*/
+  }
+}
+
+@media only screen and (max-width: 666px) {
+  /* START Styling for Mobile (photo, info, header area) */
+  /* https://knottlab.dream.press/team/<employee-name>/ */
+  .rd-details-box span, .rd-details-box a {
+    font-size: 13px!important;
+  }
+  .rd-details-box {
+    margin: 0 0 0 0;
+    padding-top: 25px;
+  }
+  .row.col-half-gutter.limit-width.row-parent {
+    padding-left: 52px;
+  }
+  .row.double-top-padding.double-bottom-padding.no-h-padding.limit-width.row-parent {
+    padding-top: 0;
+  }
+  .pos-top.pos-center.align_left.column_parent.col-lg-9.col-sm-clear.double-internal-gutter.z_index_2 {
+    padding-top: 0;
+  }
+  .row.col-half-gutter.limit-width.row-parent {
+    padding-bottom: 20px;
+  }
+  .pos-top.pos-center.align_left.column_parent.col-lg-8.desktop-hidden.tablet-hidden.col-sm-66.half-internal-gutter {
+    padding: 10px;
+  }
+  /* END Styling for Mobile (photo, info, header area) */
+}
+
+@media only screen and (min-device-width: 667px) and (max-device-width: 768px) {
+  p.rd-details-box a {
+    font-size: 15px!important;
+  }
+  p.rd-details-box {
+    padding-top: 25px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .t-entry-excerpt {
+    display: none;
+  }
+  /* ------------------------------------------------------------------- DH: Header Font Mobile*/
+  .heading-text span {
+    font-size: 1.2em;
+    /*color: blue;*/
+  }
+
+  .uncont.no-block-padding.col-custom-width {
+    padding-top: 2em!important;
+  }
+  /* ------------------------------------------------------------------- DH: Pill Buttons Mobile */
+  a.custom-link.btn.border-width-0.btn-accent.btn-circle.btn-flat.btn-icon-left,
+  .rd-inline-btn {
+    width: 20em;
+  }
+  /* ------------------------------------------------------------------- DH: Padding Mobile*/
+  .row.double-top-padding.double-bottom-padding.double-h-padding.limit-width.row-parent.row-header {
+    /*padding-top: 2em;*/
+    padding-top: unset;
+    padding-left: unset;
+    padding-right: unset;
+  }
+  .row.single-top-padding.triple-bottom-padding.single-h-padding.limit-width.row-parent {
+    /*padding-top: unset;*/
+  }
+  .row.triple-top-padding.triple-bottom-padding.single-h-padding.limit-width.row-parent {
+      padding-top: 1em;
+  }
+
+  .empty-space.empty-quad {
+    padding: 3.5em;
+  }
+  .empty-space.empty-single {
+    padding: unset;
+  }
+  /*Homepage: Areas of Expertise*/
+  .heading-text.el-text  {
+    padding-bottom: 3em;
+  }
+  .heading-text.el-text.main-text {
+    padding-bottom: unset;
+  }
+
+  /* ------------------------------------------------------------------- DH: Fonts Mobile*/
+
+  /*page heading*/
+  .heading-text.el-text.main-text span {
+    /*font-size: 1em!important;*/
+    /*font-size: .9em!important;
+    color: red;*/
+  }
+  /*section heading*/
+  .heading-text.el-text h2 {
+    /*font-size: 1em;*/
+    font-size: 1.5em;
+    /*color: green;*/
+  }
+  /*post heading*/
+  .post {
+      /*font-size: 1.4em!important;*/
+      /*color:orange;*/
+  }
+  /*uncode "Heading" block Heading text area*/
+  .rd-heading-text span {
+    font-size: 1.3em!important;
+  }
+  /*uncode "Heading" block Subheading area*/
+  .rd-heading p {
+    /*color: lightblue;*/
+  }
+  .rd-icon-box a {
+    /*color: lightblue!important;*/
+  }
+  .rd-icon-box p {
+    /*color: blue!important;*/
+  }
+  /* ------------------------------------------------------------------- DH: UNCODE Classes */
+  /*Uncode "Heading" text*/
+  .main-text span {
+    font-size: .9em!important;
+    /*color: red;*/
+  }
+  .heading-text span {
+    font-size: 1em;
+    /*color: red;*/
+  }
+  .heading-text p {
+    font-size: 1em;
+    /*color: blue;*/
+  }
+  /*Uncode "Icon Box"*/
+  .icon-box-heading a {
+    font-size: 1em;
+    /*color: red;*/
+  }
+  .icon-box-content {
+    font-size: 1em;
+    /*color: blue;*/
+  }
+  /*Uncode "Heading" text*/
+  .heading-text.el-text span {
+      /*font-size: 1.4em;*/
+  }
+
+  /* ------------------------------------------------------------------- DH: Modal Mobile*/
+  .modal-content {
+      width: 100%;
+  }
+  .modal-content {
+      padding: 20px;
+  }
+  /* Image Size Adjustment in Mobile */
+  .uncode-single-media .uncode-single-media-wrapper>.dummy~img, .uncode-single-media .uncode-single-media-wrapper>.dummy+* {
+    position: absolute;
+    top: 122px;
+    bottom: 0;
+    left: 40px;
+    right: 0;
+    width: 79%;
+  }
+  /*Styles page titles on mobile*/
+  /*.rd-title h1 {
+    font-size: 22px;
+    font-size: 2.5em;
+    line-height: 1em;
+    color: greenyellow;
+  }*/
+  /*Styles subtitle on mobile*/
+  .rd-subtitle h2 {
+    /*color: #00a7e1;*/
+    /*font-style: italic;*/
+    font-size: 18px!important;
+    line-height: 1em;
+  }
+  /* Intro Text for Mobile */
+  .rd-intro p {
+    font-size: 15px;
+    line-height: 1.5em!important;
+    /*background: blueviolet;*/
+  }
+  /*Styles H2 on mobile*/
+  h2 {
+    font-size: 20px !important;
+  }
+  /*Text Lead beneath titles on mobile*/
+  .text-lead, .text-lead>* {
+    font-size: 14px;
+    line-height: 1.25em!important;
+    /*margin: 3px 0px 0px 0px;*/
+    /*font-weight: 500;*/
+    /*font-style: italic;*/
+  }
+  /*Styles paragraph text in mobile*/
+  p {
+    line-height: 1.5!important;
+    font-size: 14px;
+  }
+  /*Decreases top margin on lines beneath headers (<HR>) */
+  .divider-wrapper {
+    margin-top: 9px!important;
+  }
+  /*Sets standard for images laterally (left) on Post Card Stacks (like media appearances)*/
+  .tmb-content-size-4.tmb-content-lateral.tmb>.t-inside .t-entry-visual {
+    height: 125px !important;
+    /* This width makes it smaller with the new padding */
+    /*width: 31.333333% !important;*/
+  }
+  /* Bottom Padding on Mobile */
+  .rd-team-members-outer-column .uncell.vc_custom_1510285633252.border-color-gyho-color.single-block-padding {
+    padding-bottom: 100px;
+  }
+  /* Media Appearances Inner Column Top Padding on Mobile */
+  .pos-top.pos-center.align_left.column_child.col-lg-12.rd-internal-column-media-appearances.half-internal-gutter {
+    padding-top: 30px;
+  }
+  /* START Styling for Mobile (photo, info, header area) */
+  /* https://knottlab.dream.press/team/<employee-name>/ */
+  .rd-details-box span, .rd-details-box a {
+    font-size: 13px!important;
+  }
+  .rd-details-box {
+    margin: 0 0 0 0;
+    padding-top: 25px;
+  }
+  .row.col-half-gutter.limit-width.row-parent {
+    padding-left: 52px;
+  }
+  .row.double-top-padding.double-bottom-padding.no-h-padding.limit-width.row-parent {
+    padding-top: 0;
+  }
+  .pos-top.pos-center.align_left.column_parent.col-lg-9.col-sm-clear.double-internal-gutter.z_index_2 {
+    padding-top: 0;
+  }
+  .row.col-half-gutter.limit-width.row-parent {
+    padding-bottom: 20px;
+  }
+  .pos-top.pos-center.align_left.column_parent.col-lg-8.desktop-hidden.tablet-hidden.col-sm-66.half-internal-gutter {
+    padding: 10px;
+  }
+  /* END Styling for Mobile (photo, info, header area) */
+  /* Text Size of Titles on Mobile */
+  .rd-index h3.t-entry-title.h4 {
+    font-size: 15px;
+    /*background: mediumpurple;*/
+  }
+  /* Padding Around Text in Card Posts */
+  .rd-index .t-entry-text-tc.single-block-padding {
+    /*padding: 1em;*/
+      /*background: mediumpurple;*/
+  }
+  /* Gutter Padding */
+  .half-gutter .tmb {
+    padding: 18px;
+  }
+  /* Outer Padding of Card Posts */
+  .half-block-padding {
+    padding: 1em;
+  }
+  /* Padding Underneath Details */
+  .tmb .t-entry-text-tc:not(.no-block-padding) .t-entry>*:first-child {
+    margin: 0px 0px .25em 0px!important;
+  }
+}
+
+@media (min-width: 960px){
+    .overlay.overlay-search .search-container {
+        display: table-cell;
+        vertical-align: middle;
+        width: 100%;
+        font-size: 28px;
+        font-size: 3.5vh;
+        background: -webkit-linear-gradient(bottom , #00356b 16% , #1f243f 85%);
+        opacity: 0.94;
+    }
+
+    .overlay.open {
+        opacity: 0.94;
+    }
+}
+
+/* ----------- Non-Retina Screens ----------- */
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {}
+
+/* ----------- Retina Screens ----------- */
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {}
+
+/* ----------- iPad 3, 4 and Pro 9.7" ----------- */
+
+/* Portrait and Landscape */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+  /*remove all default padding*/
+  .border-color-gyho-color.single-block-padding {
+    padding: unset;
+    padding-left: 2.3em;
+  }
+  .row.full-width.row-parent {
+    padding-top: 40px;
+  }
+  .rd-container {
+    /*background: brown;*/
+    /*padding: 1em;*/
+  }
+  /*START mini-cards*/
+  .t-inside {
+    /*padding:unset;*/
+  }
+  .t-entry a {
+    /*background: blue;*/
+    font-size: .9em;
+  }
+  .t-entry-title {
+    /*background: brown;*/
+  }
+  .t-entry-cf-detail-521378,
+  .t-entry-cf-detail-155643,
+  .t-entry-cf-detail-153464 {
+    /*background: red;*/
+    font-size: .8em;
+  }
+  /*phone number*/
+  .t-entry-cf-detail-110456 {
+    /*background: green;*/
+    display: inline;
+    font-size: .8em;
+  }
+  /*email address*/
+  .t-entry-cf-detail-142935 {
+    /*background: orange;*/
+    display: inline;
+    font-size: .8em;
+    /*float:right;*/
+    text-align: right;
+  }
+  /*END mini-cards*/
+  /*START team-member-contact-box info area*/
+  .rd-details-box {
+    padding: unset;
+    /*background: olive;*/
+  }
+  .rd-detail-container {
+    padding: unset;
+  }
+  .rd-detail-value {
+    font-size: .5em;
+    /*background: white;*/
+  }
+  .rd-detail-label {
+    font-size: .5em;
+    /*background: white;*/
+  }
+  /*END team-member-contact-box info area*/
+  .t-entry-excerpt {
+    /*display: none;*/
+  }
+  .rd-title span {
+    /*background: greenyellow;*/
+    font-size: 1.2em;
+  }
+  .employee-job-title span {
+    /*background: coral;*/
+    font-size: 1.1em;
+  }
+  .rd-subtile {
+    /*background: blue;*/
+  }
+  .rd-intro {
+    /*background: blueviolet;*/
+  }
+  .rd-subheading {
+    /*background: yellow;*/
+  }
+  .rd-section-heading {
+    /*background: orange;*/
+  }
+  .rd-page-lead {
+    /*background: purple;*/
+  }
+}
+
+/* Portrait */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  /*remove all default padding*/
+  .border-color-gyho-color.single-block-padding {
+    padding: unset;
+  }
+}
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* Portrait and Landscape */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {}
+
+/* Portrait */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {}
+
+/* Landscape */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {}
+
+/* Portrait */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {}
+
+/* Landscape */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {}
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+/* Portrait and Landscape */
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {}
+
+/* Portrait */
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {}
+
+/* Landscape */
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {}
+
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {}
+
+/* Portrait */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {}
+
+/* Landscape */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {}

@@ -438,8 +438,9 @@ TEAM MEMBER SINGLES
 MODAL: APPOINTMENT REQUEST
 *********************** RD ***
 
- /* The Modal (background) */
+/* ------------------------------------------------------------------- DH: Modal*/
 
+ /* The Modal (background) */
 .modal {
   display: none;
   /* Hidden by default */
@@ -710,6 +711,14 @@ MOBILE STYLES
   /*Uncode "Heading" text*/
   .heading-text.el-text span {
       /*font-size: 1.4em;*/
+  }
+
+  /* ------------------------------------------------------------------- DH: Modal Mobile*/
+  .modal-content {
+      width: 100%;
+  }
+  .modal-content {
+      padding: 20px;
   }
 
 
@@ -1107,7 +1116,7 @@ input#inf_custom_IncidentDate {
     /*border-left: none;*/
 }
 
-/* ------------------------------------------------------------------- DH: Author Info */
+/* ------------------------------------------------------------------- DH RND: Author Info */
 /* ------------------------------------------------------------------- TEM: Author Info */
 .author-info {
     display: none !important;
@@ -1414,7 +1423,42 @@ span.rd-detail-value  {
   /*background: yellow;*/
 }
 
-/* CARDS START */
+/* ------------------------------------------------------------------- DH RND: CARD */
+/*Above  Title:*/
+.t-entry-type,
+.t-entry-date,
+.t-entry-cf-detail-699204,
+.t-entry-cf-detail-183492,
+.t-entry-cf-detail-153464,
+.t-entry-cf-detail-942901,
+.t-entry-cf-detail-155643 {
+  color: #00a7e1;
+  font-weight: 500;
+}
+
+/*Title:*/
+.t-entry-title {}
+
+/*Below Title:*/
+.t-entry-cf-detail-521378,
+.t-entry-cf-detail-124415,
+.t-entry-cf-detail-284801 {
+  font-weight: 500;
+  color: #777;
+  font-style: italic;
+}
+
+/*Excerpt:*/
+.t-entry-excerpt {}
+
+/*Below Excerpt:*/
+.t-entry-cf-detail-142935,
+.t-entry-cf-detail-110456,
+.t-entry-cf-detail-146640,
+.t-entry-cf-detail-102771,
+.t-entry-cf-detail-166336 {}
+
+
 .rd-index .t-entry {
   padding: 2em;
 }
@@ -1438,6 +1482,42 @@ span.rd-detail-value  {
   /*background: coral;*/
 }
 /* CARDS END */
+
+/* ------------------------------------------------------------------- DH RND: MINI CARD */
+/*Above  Title:*/
+.t-entry-type,
+.t-entry-date,
+.t-entry-cf-detail-699204,
+.t-entry-cf-detail-183492,
+.t-entry-cf-detail-153464,
+.t-entry-cf-detail-942901,
+.t-entry-cf-detail-155643 {
+  color: #00a7e1;
+  font-weight: 500;
+}
+
+/*Title:*/
+.t-entry-title {}
+
+/*Below Title:*/
+.t-entry-cf-detail-521378,
+.t-entry-cf-detail-124415,
+.t-entry-cf-detail-284801 {
+  font-weight: 500;
+  color: #777;
+  font-style: italic;
+}
+
+/*Excerpt:*/
+.t-entry-excerpt {}
+
+/*Below Excerpt:*/
+.t-entry-cf-detail-166336 {}
+
+/*Display: None*/
+.t-entry-cf-detail-102771 {}
+.t-entry-excerpt {}
+
 
  /* MINI CARDS START */
  .t-entry-text-tc {
