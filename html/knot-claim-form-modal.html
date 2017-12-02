@@ -4,23 +4,6 @@ Placed in a Wordpress Content Block "Knott Lab - Footer"
 Associated with Javascript file located in Theme Options => CSS & JS => Javascript input window
 
 -->
-<script>
-	var inf_custom_IncidentDateDatePicker = new Pikaday({
-		container: document.getElementById('inf_custom_IncidentDate_calContainer'),
-		field: document.getElementById('inf_custom_IncidentDate'),
-		format: 'MM-DD-YYYY'
-	});
-	var inf_custom_IncidentDateIcon = document.getElementById('inf_custom_IncidentDate_img');
-	inf_custom_IncidentDateIcon.addEventListener('click', function() {
-		inf_custom_IncidentDateDatePicker.show();
-	});
-</script>
-<!--
-
-Placed in a Wordpress Content Block "Knott Lab - Footer"
-Associated with Javascript file located in Theme Options => CSS & JS => Javascript input window
-
--->
 <!-- The Modal -->
 <div id="myModal" class="modal">
 	<!-- Modal content -->
@@ -38,7 +21,7 @@ Associated with Javascript file located in Theme Options => CSS & JS => Javascri
 							<div class="uncont">
 								<div class="top-section">
 									<!-- <div class="heading-text el-text">
-											<div class="h2"><span>Request an Appointment</span></div>
+											<div class="h2"><span>Submit New Case/Claim</span></div>
 										</div> -->
 									<div class="clear"></div>
 									<div class="uncode_text_column text-lead">
@@ -120,7 +103,7 @@ Associated with Javascript file located in Theme Options => CSS & JS => Javascri
 										<div>&nbsp;</div>
 									</div>
 									<div class="infusion-submit">
-										<button class="infusion-recaptcha wpcf7-form-control wpcf7-submit btn btn-accent" id="recaptcha_8e8bda8a798f29a019d8d452a3856f4c" type="submit">Submit to Knott Laboratory</button>
+										<button class="infusion-recaptcha wpcf7-form-control wpcf7-submit btn btn-accent ga-tracking" id="recaptcha_8e8bda8a798f29a019d8d452a3856f4c" type="submit">Submit to Knott Laboratory</button>
 									</div>
 
 									</form>
@@ -137,3 +120,15 @@ Associated with Javascript file located in Theme Options => CSS & JS => Javascri
 			</div>
 		</div>
 	</div>
+</div>
+<script>
+	var inf_custom_IncidentDateDatePicker = new Pikaday({
+		container: document.getElementById('inf_custom_IncidentDate_calContainer'),
+		field: document.getElementById('inf_custom_IncidentDate'),
+		format: 'MM-DD-YYYY'
+	});
+	var inf_custom_IncidentDateIcon = document.getElementById('inf_custom_IncidentDate_img');
+	inf_custom_IncidentDateIcon.addEventListener('click', function() {
+		inf_custom_IncidentDateDatePicker.show();
+	});
+</script>
