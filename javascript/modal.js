@@ -1,3 +1,4 @@
+// This is used in the ../html/index.html
 (function($){
 
   // Associated with Javascript file located in Theme Options => CSS & JS => Javascript input window
@@ -17,5 +18,5 @@
       modal.style.display = "none";
     }
   }
-  
+
 })(jQuery);
