@@ -130,16 +130,17 @@
 		console.log("GA Tracking on submit button clicked");
 		ga('send', 'event', "New Case Form Submission",  "submit", "new-case");
 	}
-}
 
-// Calendar Date Selector for Modal
-var inf_custom_IncidentDateDatePicker = new Pikaday({
-	container: document.getElementById('inf_custom_IncidentDate_calContainer'),
-	field: document.getElementById('inf_custom_IncidentDate'),
-	format: 'MM-DD-YYYY'
-});
-var inf_custom_IncidentDateIcon = document.getElementById('inf_custom_IncidentDate_img');
-inf_custom_IncidentDateIcon.addEventListener('click', function() {
-	inf_custom_IncidentDateDatePicker.show();
-});
+  // Calendar Date Selector for Modal
+  var inf_custom_IncidentDateDatePicker = new Pikaday({
+  	container: document.getElementById('inf_custom_IncidentDate_calContainer'),
+  	field: document.getElementById('inf_custom_IncidentDate'),
+  	format: 'MM-DD-YYYY'
+  });
+  var inf_custom_IncidentDateIcon = document.getElementById('inf_custom_IncidentDate_img');
+  inf_custom_IncidentDateIcon.addEventListener('click', function() {
+  	inf_custom_IncidentDateDatePicker.show();
+  });
+
+}
 </script>
