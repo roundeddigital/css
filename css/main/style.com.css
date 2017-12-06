@@ -839,6 +839,7 @@ img.alignleft {
     border: none;
     border-radius: 0;
     /* height: 0; */
+    margin-top: 20px;
     margin-bottom: 20px;
     overflow: hidden;
     /* padding-top: 30px!important; */
