@@ -56,7 +56,7 @@ function cptui_register_my_cpts() {
 		"query_var" => true,
 		"menu_position" => 4,
 		"menu_icon" => "dashicons-store",
-		"supports" => array( "title", "editor", "thumbnail", "excerpt", "custom-fields" ),
+		"supports" => array( "title", "editor", "thumbnail", "excerpt", "custom-fields", "jetpack_sitemap_post_types" ),
 		"taxonomies" => array( "service_category" ),
 	);
 
@@ -91,7 +91,7 @@ function cptui_register_my_cpts() {
 		"query_var" => true,
 		"menu_position" => 4,
 		"menu_icon" => "dashicons-groups",
-		"supports" => array( "title", "editor", "thumbnail", "excerpt", "custom-fields" ),
+		"supports" => array( "title", "editor", "thumbnail", "excerpt", "custom-fields", "jetpack_sitemap_post_types" ),
 	);
 
 	register_post_type( "team", $args );
@@ -125,7 +125,7 @@ function cptui_register_my_cpts() {
 		"query_var" => true,
 		"menu_position" => 7,
 		"menu_icon" => "dashicons-megaphone",
-		"supports" => array( "title", "editor", "thumbnail", "excerpt", "custom-fields" ),
+		"supports" => array( "title", "editor", "thumbnail", "excerpt", "custom-fields", "jetpack_sitemap_post_types" ),
 	);
 
 	register_post_type( "press", $args );
@@ -158,7 +158,7 @@ function cptui_register_my_cpts() {
 		"query_var" => true,
 		"menu_position" => 8,
 		"menu_icon" => "dashicons-businessman",
-		"supports" => array( "title", "editor", "thumbnail", "excerpt", "custom-fields" ),
+		"supports" => array( "title", "editor", "thumbnail", "excerpt", "custom-fields", "jetpack_sitemap_post_types" ),
 	);
 
 	register_post_type( "careers", $args );
@@ -191,7 +191,7 @@ function cptui_register_my_cpts() {
 		"query_var" => true,
 		"menu_position" => 9,
 		"menu_icon" => "dashicons-location",
-		"supports" => array( "title", "editor", "thumbnail", "excerpt", "custom-fields" ),
+		"supports" => array( "title", "editor", "thumbnail", "excerpt", "custom-fields", "jetpack_sitemap_post_types" ),
 	);
 
 	register_post_type( "locations", $args );
@@ -222,24 +222,24 @@ function cptui_register_my_cpts() {
 		"hierarchical" => false,
 		"rewrite" => array( "slug" => "affiliations", "with_front" => true ),
 		"query_var" => true,
-		"supports" => array( "title", "editor", "thumbnail", "excerpt" ),
+		"supports" => array( "title", "editor", "thumbnail", "excerpt", "jetpack_sitemap_post_types" ),
 		"taxonomies" => array( "employee_featured" ),
 	);
 
 	register_post_type( "affiliations", $args );
 
 
-  /* ********************
-  * ABSTRACTS
-  ******************** */
+	 /* ********************
+	 * PUBLICATIONS
+	 ******************** */
 
 	$labels = array(
-		"name" => __( "Abstracts", "uncode-child" ),
-		"singular_name" => __( "Abstract", "uncode-child" ),
+		"name" => __( "Publications", "uncode-child" ),
+		"singular_name" => __( "Publication", "uncode-child" ),
 	);
 
 	$args = array(
-		"label" => __( "Abstracts", "uncode-child" ),
+		"label" => __( "Publications", "uncode-child" ),
 		"labels" => $labels,
 		"description" => "",
 		"public" => true,
@@ -253,14 +253,49 @@ function cptui_register_my_cpts() {
 		"capability_type" => "post",
 		"map_meta_cap" => true,
 		"hierarchical" => false,
-		"rewrite" => array( "slug" => "abstracts", "with_front" => true ),
+		"rewrite" => array( "slug" => "publications", "with_front" => true ),
 		"query_var" => true,
 		"menu_icon" => "dashicons-format-aside",
-		"supports" => array( "title", "editor", "thumbnail", "excerpt", "custom-fields" ),
-		"taxonomies" => array( "service_category", "employee_featured" ),
+		"supports" => array( "title", "editor", "thumbnail", "excerpt", "jetpack_sitemap_post_types" ),
+		"taxonomies" => array( "employee_featured" ),
 	);
 
-	register_post_type( "abstracts", $args );
+	register_post_type( "publications", $args );
+
+
+  /* ********************
+  * ABSTRACTS
+  ******************** */
+
+	// $labels = array(
+	// 	"name" => __( "Abstracts", "uncode-child" ),
+	// 	"singular_name" => __( "Abstract", "uncode-child" ),
+	// );
+  //
+	// $args = array(
+	// 	"label" => __( "Abstracts", "uncode-child" ),
+	// 	"labels" => $labels,
+	// 	"description" => "",
+	// 	"public" => true,
+	// 	"publicly_queryable" => true,
+	// 	"show_ui" => true,
+	// 	"show_in_rest" => false,
+	// 	"rest_base" => "",
+	// 	"has_archive" => false,
+	// 	"show_in_menu" => true,
+	// 	"exclude_from_search" => true,
+	// 	"capability_type" => "post",
+	// 	"map_meta_cap" => true,
+	// 	"hierarchical" => false,
+	// 	"rewrite" => array( "slug" => "abstracts", "with_front" => true ),
+	// 	"query_var" => true,
+	// 	"menu_icon" => "dashicons-format-aside",
+	// 	"supports" => array( "title", "editor", "thumbnail", "excerpt", "custom-fields", "jetpack_sitemap_post_types" ),
+	// 	"taxonomies" => array( "service_category", "employee_featured" ),
+	// );
+  //
+	// register_post_type( "abstracts", $args );
+
 }
 
 add_action( 'init', 'cptui_register_my_cpts' );
@@ -544,6 +579,108 @@ function cptui_register_my_taxes() {
 		"show_in_quick_edit" => false,
 	);
 	register_taxonomy( "service", array( "press", "portfolio" ), $args );
+
+	/**
+	 * Taxonomy: Publications Categories.
+	 */
+
+	$labels = array(
+		"name" => __( "Publications Categories", "uncode-child" ),
+		"singular_name" => __( "Publication Category", "uncode-child" ),
+	);
+
+	$args = array(
+		"label" => __( "Publications Categories", "uncode-child" ),
+		"labels" => $labels,
+		"public" => true,
+		"hierarchical" => true,
+		"label" => "Publications Categories",
+		"show_ui" => true,
+		"show_in_menu" => true,
+		"show_in_nav_menus" => true,
+		"query_var" => true,
+		"rewrite" => array( 'slug' => 'publications_category', 'with_front' => true, ),
+		"show_admin_column" => false,
+		"show_in_rest" => false,
+		"rest_base" => "",
+		"show_in_quick_edit" => true,
+	);
+	register_taxonomy( "publications_category", array( "publications" ), $args );
+
 }
 
 add_action( 'init', 'cptui_register_my_taxes' );
+
+
+/* ========================================================================================== */
+
+/* ******************** RD ***
+SITEMAP Builder for custom post types
+******************** RD */
+
+// https://jetpack.com/support/sitemaps/
+// https://developer.jetpack.com/2016/01/28/sitemaps-add-custom-post-type-support/
+// https://github.com/Automattic/jetpack/blob/5.6/modules/sitemaps/sitemap-builder.php/#L101
+
+// if (!function_exists('jeherve_add_cpt_sitemaps')) :
+
+function jeherve_add_cpt_sitemaps( $post_types ) {
+    $post_types[] = 'services';
+    $post_types[] = 'team';
+    $post_types[] = 'press';
+    $post_types[] = 'careers';
+    $post_types[] = 'locations';
+    $post_types[] = 'affiliations';
+    $post_types[] = 'publications';
+    return $post_types;
+}
+// add_filter( 'jetpack_sitemap_post_types', 'jeherve_add_cpt_sitemaps' );
+apply_filters ( 'jetpack_sitemap_post_types', 'jeherve_add_cpt_sitemaps' );
+
+// endif;
+
+/**
+ * Add XML Sitemap feature for bbpress plugin in JetPack Sitemaps module
+ */
+// if (!function_exists('theme_slug_add_bbpress_sitemaps_jetpack')) :
+//
+//     function theme_slug_add_bbpress_sitemaps_jetpack($post_types) {
+//         $post_types[] = 'forum';
+// 				$post_types[] = 'services';
+// 		    $post_types[] = 'team';
+// 		    $post_types[] = 'press';
+// 		    $post_types[] = 'careers';
+// 		    $post_types[] = 'locations';
+// 		    $post_types[] = 'affiliations';
+// 		    $post_types[] = 'publications';
+//
+//         return $post_types;
+//     }
+//
+// add_filter( 'jetpack_sitemap_post_types', 'theme_slug_add_bbpress_sitemaps_jetpack' );
+//
+// endif;
+
+//* Create portfolio custom post type
+// add_action( 'init', 'bayareawebs_portfolio_post_type' );
+// function bayareawebs_portfolio_post_type() {
+//
+// 	register_post_type( 'portfolio',
+// 		array(
+// 			'labels' => array(
+// 				'name'          => __( 'Portfolio', 'bayareawebs' ),
+// 				'singular_name' => __( 'Portfolio', 'bayareawebs' ),
+// 			),
+// 			'has_archive'  => true,
+// 			'hierarchical' => true,
+// 			'menu_icon'    => get_stylesheet_directory_uri() . '/lib/icons/portfolio.png',
+// 			'public'       => true,
+// 			'rewrite'      => array( 'slug' => 'portfolio', 'with_front' => false ),
+// 			'supports'     => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'trackbacks', 'custom-fields', 'revisions', 'page-attributes', 'genesis-seo', 'genesis-cpt-archives-settings' ),
+// 			'supports'     => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'trackbacks', 'custom-fields', 'revisions', 'page-attributes', 'genesis-seo', 'genesis-cpt-archives-settings', 'jetpack_sitemap_post_types'
+// 			'taxonomies'   => array( 'portfolio-type' ),
+//
+// 		)
+// 	);
+//
+// }

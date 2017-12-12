@@ -917,6 +917,32 @@ img.alignleft {
   /*background: lightblue;*/
 }
 
+/* ------------------------------------------------------------------- RND SERVICES PAGE  START*/
+/*Places "Publisher" inline with "publish date" and adds (em)dash before "Publish Date"*/
+
+   /*Publisher*/
+    .rd-index-list .t-entry-cf-detail-834333 {
+        display: inline;
+    }
+
+    /*Before Publish Date*/
+    .rd-index-list .t-entry-cf-detail-495751::before {
+        content: " — ";
+    }
+
+    /*Publish Date*/
+    .rd-index-list .t-entry-cf-detail-495751 {
+        display: inline;
+    }
+
+/*Formats posts module for items to appear in a list*/
+.rd-index-list .t-entry {
+     padding: 0em;
+     margin: 0 0 1.5em 0;
+     font-size: 15px;
+     line-height: 1.5!important;
+}
+
 /*affiliations url link*/
 .t-entry-cf-detail-102771 {
   font-size: 2.5em!important;
