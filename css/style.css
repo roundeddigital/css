@@ -920,20 +920,20 @@ img.alignleft {
 /* ------------------------------------------------------------------- RND SERVICES PAGE  START*/
 /*Places "Publisher" inline with "publish date" and adds (em)dash before "Publish Date"*/
 
-   /*Publisher*/
-    .rd-index-list .t-entry-cf-detail-834333 {
-        display: inline;
-    }
+/*Publisher*/
+.rd-index-list .t-entry-cf-detail-834333 {
+    display: inline;
+}
 
-    /*Before Publish Date*/
-    .rd-index-list .t-entry-cf-detail-495751::before {
-        content: " — ";
-    }
+/*Before Publish Date*/
+.rd-index-list .t-entry-cf-detail-495751::before {
+    content: " — ";
+}
 
-    /*Publish Date*/
-    .rd-index-list .t-entry-cf-detail-495751 {
-        display: inline;
-    }
+/*Publish Date*/
+.rd-index-list .t-entry-cf-detail-495751 {
+    display: inline;
+}
 
 /*Formats posts module for items to appear in a list*/
 .rd-index-list .t-entry {
