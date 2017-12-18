@@ -871,12 +871,20 @@ img.alignleft {
     padding: unset;
 }
 
-
-
 .isotope-wrapper.isotope-inner-padding.half-gutter {
     padding-left: unset!important;
     padding-right: unset!important;
 }
+
+/* https://knottlab.com/cases/ */
+.isotope-filters ul.menu-smart li.filter-cat-112 {
+    display: none !important;
+}
+
+.isotope-filters ul.menu-smart li.filter-cat-308 {
+    display: none !important;
+}
+
 
 .border-color-gyho-color.single-block-padding {
   /*padding-right: unset;*/
@@ -1480,13 +1488,17 @@ section.style-color-lxmt-bg.row-container {
   .row-internal.row-container {
     padding: unset;
   }
-  .row.double-top-padding.double-bottom-padding.no-h-padding.limit-width.row-parent {
-    }
+
  .rd-careers-padding {
    padding: .5em;
   }
   .row-container {
-    padding: unset!important;
+    /* padding: unset!important; */
+    /* padding-left: 10px!important; */
+  }
+
+  .heading-text.el-text.rd-title .heading-text.el-text.rd-subtitle {
+    padding-bottom: 10px;
   }
   span.rd-detail-value {
     font-size: .5em;
