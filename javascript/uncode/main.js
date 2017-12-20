@@ -39,6 +39,7 @@
       jQuery(this).append(html);
     });
 
+    // track emails on team and query team pages
     var names = [];
     // Email
     jQuery('.t-entry-cf-detail-142935').each(function() {
@@ -62,12 +63,12 @@
       // add a click event listener
       var track_email = "#track-email-"+name;
       document.querySelector(track_email).addEventListener("click", function(){
-        trackEmail(name)
+        trackEmailTeam(name)
       }, false);
     });
 
-    function trackEmail(name) {
-      console.log("Email Clicked:", name);
+    function trackEmailTeam(name) {
+      console.log("Email Clicked Team:", name);
       // Email Click (Team) (Individual)
       // Email => category
       // Link => action
@@ -76,6 +77,24 @@
       // ga('send', 'event', category, action, label);
       ga('send', 'event', "Email", name, "Team");
     }
+
+    // class="track-email-individual"
+    if (document.querySelector(".track-email-individual")) {
+      document.querySelector(".track-email-individual").addEventListener("click", trackEmailIndividual);
+      // jQuery('.track-email-individual').addEventListener("click", trackEmailIndividual);
+    }
+
+    function trackEmailIndividual() {
+      console.log("Email Clicked Individual:", event.target.id);
+      // Email Click (Team) (Individual)
+      // Email => category
+      // Link => action
+      // name => label
+      // label
+      // ga('send', 'event', category, action, label);
+      ga('send', 'event', "Email", event.target.id, "Individual");
+    }
+
 
     /* ========================================================================================== */
 
