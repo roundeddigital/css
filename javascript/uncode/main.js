@@ -33,7 +33,7 @@
         '<i class="fa fa-phone fa-fw fa-flip-horizontal" aria-hidden="true"></i>' +
         '</span>' +
         '<span class="rd-detail-value">' +
-        '<a href=tel:+1' + phoneURL + ' target="_blank">' + phone + '</a>' +
+        '<a class="telephone-number-body" href=tel:+1' + phoneURL + ' target="_blank">' + phone + '</a>' +
         '</span>' +
         '</span>';
       jQuery(this).append(html);
@@ -187,6 +187,23 @@
   inf_custom_IncidentDateIcon.addEventListener('click', function() {
   	inf_custom_IncidentDateDatePicker.show();
   });
+
+   jQuery('a.telephone-number-footer').click(function() {
+      console.log("Telephone Number Clicked (Footer)");
+      return ga('send', 'event', 'Telephone', 'click', 'footer');
+   });
+   jQuery('a.telephone-number-body').click(function() {
+     console.log("Telephone Number Clicked (Body)");
+     return ga('send', 'event', 'Telephone', 'click', 'body');
+   });
+   jQuery('.telephone-number-menu').click(function() {
+     console.log("Telephone Number Clicked (Menu)");
+     return ga('send', 'event', 'Telephone', 'click', 'menu');
+   });
+   jQuery('.telephone-number-header').click(function() {
+     console.log("Telephone Number Clicked (Header)");
+    return ga('send', 'event', 'Telephone', 'click', 'header');
+   });
 
 }
 </script>
