@@ -16,6 +16,70 @@
 
     ga('create', 'UA-4459766-1', 'auto');
 
+
+    /* ========================================================================================== */
+    // Replace static phone numbers and emails with active links
+
+    // Phone Number
+    jQuery('.t-entry-cf-detail-110456').each(function() {
+      // jQuery('.t-entry-cf-detail-110456').attr("phone", "");
+      var phone = jQuery(this).text();
+      var phoneURL = phone.replace(/[" "()-]/g, "");
+      jQuery(this).text(phone.replace(phone, ''));
+      // jQuery(this).append( "<span class='rd-detail-value'><i class='fa fa-phone fa-fw fa-flip-horizontal' aria-hidden='true'></i></i><a href=tel:+1"+phoneURL+"> "+phone+"</a></span>" );
+      var html =
+        '<span class="rd-detail-container">' +
+        '<span class="rd-detail-label">' +
+        '<i class="fa fa-phone fa-fw fa-flip-horizontal" aria-hidden="true"></i>' +
+        '</span>' +
+        '<span class="rd-detail-value">' +
+        '<a href=tel:+1' + phoneURL + ' target="_blank">' + phone + '</a>' +
+        '</span>' +
+        '</span>';
+      jQuery(this).append(html);
+    });
+
+    var names = [];
+    // Email
+    jQuery('.t-entry-cf-detail-142935').each(function() {
+      // jQuery('.t-entry-cf-detail-142935').attr("email", "");
+      var email = jQuery(this).text();
+      // remove the @knottlab.com
+      var name   = email.substring(0, email.lastIndexOf("@"));
+      var domain = email.substring(email.lastIndexOf("@") +1);
+      // names.push(name);
+      jQuery(this).text(email.replace(email, ''));
+      var html =
+        '<span class="rd-detail-container">' +
+        '<span class="rd-detail-label">' +
+        '<i class="fa fa-envelope fa-fw" aria-hidden="true"></i>' +
+        '</span>' +
+        '<span class="rd-detail-value">' +
+        '<a id="track-email-'+name+'" href=mailto:'+email+' target="_blank">'+email+'</a>'+
+        '</span>' +
+        '</span>';
+      jQuery(this).append(html);
+      // add a click event listener
+      var track_email = "#track-email-"+name;
+      document.querySelector(track_email).addEventListener("click", function(){
+        trackEmail(name)
+      }, false);
+    });
+
+    function trackEmail(name) {
+      console.log("Email Clicked:", name);
+      // Email Click (Team) (Individual)
+      // Email => category
+      // Link => action
+      // name => label
+      // label
+      // ga('send', 'event', category, action, label);
+      ga('send', 'event', "Email", name, "Team");
+    }
+
+    /* ========================================================================================== */
+
+
     // Contact Form 7
     document.addEventListener('wpcf7mailsent', function(event) {
       // console.log("Form 7 ID = ",event.detail.contactFormId);
@@ -57,50 +121,13 @@
     if (d == 5) document.getElementById('fri').style.color = '#00a7e1';
     if (d == 6) document.getElementById('sat').style.color = '#00a7e1';
 
-    /* ========================================================================================== */
-    // Replace static phone numbers and emails with active links
-
-    // Phone Number
-    jQuery('.t-entry-cf-detail-110456').each(function() {
-      // jQuery('.t-entry-cf-detail-110456').attr("phone", "");
-      var phone = jQuery(this).text();
-      var phoneURL = phone.replace(/[" "()-]/g, "");
-      jQuery(this).text(phone.replace(phone, ''));
-      // jQuery(this).append( "<span class='rd-detail-value'><i class='fa fa-phone fa-fw fa-flip-horizontal' aria-hidden='true'></i></i><a href=tel:+1"+phoneURL+"> "+phone+"</a></span>" );
-      var html =
-        '<span class="rd-detail-container">' +
-        '<span class="rd-detail-label">' +
-        '<i class="fa fa-phone fa-fw fa-flip-horizontal" aria-hidden="true"></i>' +
-        '</span>' +
-        '<span class="rd-detail-value">' +
-        '<a href=tel:+1' + phoneURL + ' target="_blank">' + phone + '</a>' +
-        '</span>' +
-        '</span>';
-      jQuery(this).append(html);
-    });
-
-    // Email
-    jQuery('.t-entry-cf-detail-142935').each(function() {
-      // jQuery('.t-entry-cf-detail-142935').attr("email", "");
-      var email = jQuery(this).text();
-      jQuery(this).text(email.replace(email, ''));
-      var html =
-        '<span class="rd-detail-container">' +
-        '<span class="rd-detail-label">' +
-        '<i class="fa fa-envelope fa-fw" aria-hidden="true"></i>' +
-        '</span>' +
-        '<span class="rd-detail-value">' +
-        '<a href=mailto:' + email + ' target="_blank">' + email + '</a>' +
-        '</span>' +
-        '</span>';
-      jQuery(this).append(html);
-    });
-
 	/* ========================================================================================== */
 	// Modal Window
 
 	// "Submit New Case/Claim" Form
-	document.querySelector(".open-modal").addEventListener("click", openModal);
+  if (document.querySelector(".open-modal")) {
+	   document.querySelector(".open-modal").addEventListener("click", openModal);
+  }
 	if (document.querySelector(".open-modal-widget")) {
 		document.querySelector(".open-modal-widget").addEventListener("click", openModal);
 	}
