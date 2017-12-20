@@ -75,7 +75,7 @@
       // name => label
       // label
       // ga('send', 'event', category, action, label);
-      ga('send', 'event', "Email", name, "Team");
+      ga('send','event','Email','Team', name);
     }
 
     // class="track-email-individual"
@@ -92,7 +92,7 @@
       // name => label
       // label
       // ga('send', 'event', category, action, label);
-      ga('send', 'event', "Email", event.target.id, "Individual");
+      ga('send', 'event', "Email", "Individual", event.target.id);
     }
 
 
