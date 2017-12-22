@@ -53,6 +53,34 @@ Knott Laboratory, LLC: Custom CSS
 
 ==========================================================================================*/
 
+/* fixes issue with menubar START
+https://support.undsgn.com/hc/en-us/articles/214092169 */
+
+@media (min-width: 960px){
+.chrome .col-lg-0,
+.chrome .col-lg-1,
+.chrome .col-lg-2,
+.chrome .col-lg-3,
+.chrome .col-lg-4,
+.chrome .col-lg-5,
+.chrome .col-lg-6,
+.chrome .col-lg-7,
+.chrome .col-lg-8,
+.chrome .col-lg-9,
+.chrome .col-lg-10,
+.chrome .col-lg-11,
+.chrome .col-lg-12 {
+    height: 0px;
+}
+}
+
+.chrome .owl-carousel.owl-loaded.owl-height-forced{
+height: 0px;
+}
+
+/* fixes issue with menubar END
+https://support.undsgn.com/hc/en-us/articles/214092169 */
+
 /*
 MISC SEARCH TERMS
 
